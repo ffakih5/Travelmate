@@ -1,0 +1,21 @@
+html {
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+body {
+    min-height: 100vh;
+}
+
+.page-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.uk-navbar-nav > li > a {
+    color: #383838;
+    font-family: Termina,sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    text-transform: lowercase;
+}
