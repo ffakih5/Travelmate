@@ -33,6 +33,9 @@ h2 {
     width: 100%;
 
 }
+.uk-navbar-container{
+    min-width: 600px;
+}
 
 .uk-navbar-nav > li > a {
     color: #383838;
