@@ -94,6 +94,29 @@ h2 {
     z-index: -99;
 }
 
+/* NAV */
+
+.countries-dropdown {
+    background-color: white;
+    font-family: Termina,sans-serif;
+    padding: 20px;
+    box-shadow: 4px 4px 6px #00000011 ;
+}
+
+.countries-list {
+    margin: 0;
+}
+
+.saved-country {
+    padding: 7px 5px;
+    cursor: pointer;
+}
+
+.saved-country:hover {
+    color: #C39CB7;
+    transition: .2s ease;
+}
+
 /* dashboard header */
 
 .header {
@@ -170,6 +193,7 @@ h2 {
 .month-btn {
     background-color: #C39CB7;
     color: white;
+    cursor: pointer;
     font-family: Termina, sans-serif;
     font-size: 14px;
     padding: 6px 10px;
@@ -180,4 +204,76 @@ h2 {
 
 .active-month {
     background-color: #F05058;
+}
+
+.neighbour-country {
+    cursor: pointer;
+    padding: 15px 0;
+    border: none;
+    border-bottom: solid 1px #bebebe;
+}
+
+.cards-container {
+    margin-bottom: 25px;
+}
+
+
+/* CARDS */
+
+.overview-card {
+    border: solid 4px #9B5B8E;
+}
+
+.overview-card h2 {
+    color: #4AA19B;
+}
+
+.advice-card {
+    border: solid 4px #9B5B8E;
+    border-radius: 40px;
+    box-shadow: 8px 8px #4AA19B;
+    padding: 20px 15px;
+}
+
+.advice-card h2 {
+    color: #A55591;
+}
+
+.water-card {
+    border: solid 4px #F05058;
+    box-shadow: 8px 8px #C39CB7;
+}
+
+.water-card h2 {
+    color: #F05058;
+}
+
+.weather-card {
+    border: solid 4px #07dfd4;
+    margin-bottom: 0;
+    padding: 20px 15px;
+}
+
+.weather-card h2 {
+    color: #4AA19B;
+}
+
+.currency-card {
+    border: solid 4px #4AA19B;
+    border-radius: 40px;
+    box-shadow: 8px 8px #F05058;
+    padding: 20px 15px;
+}
+
+.currency-card h2 {
+    color: #A55591;
+}
+
+.neighbours-card {
+    border: solid 4px #C39CB7;
+    box-shadow: 8px 8px #07dfd4;
+}
+
+.neighbours-card h2 {
+    color: #C39CB7;
 }

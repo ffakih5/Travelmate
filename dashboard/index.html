@@ -39,17 +39,14 @@
                             About
                         </a>
                     </li>
-                </ul>
-        
-                <ul class="uk-navbar-nav">
                     <li>
                         <a href="">My Countries</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li>
+                        <div class="countries-dropdown" uk-drop="offset: -20">
+                            <ul class="uk-list countries-list">
+                                <li class="saved-country">
                                     Netherlands
                                 </li>
-                                <li>
+                                <li class="saved-country">
                                     Sweden
                                 </li>
                             </ul>
@@ -100,8 +97,8 @@
                 </div> <!--first column-->
                 
                 <div class="uk-width-2-3">
-
-                    <div class="uk-container-center">
+                    
+                    <div class="uk-container-center cards-container">
 
                         <div class="uk-child-width-1-2 uk-grid-match" uk-grid>
                             <div class="">
@@ -114,15 +111,17 @@
                             <div>
                             <div class="card neighbours-card">
                                 <h2>neighbours</h2>
-                                <p>belgium etc</p>
-                                <p>belgium etc</p>
+                                <ul class="uk-list">
+                                    <li class="neighbour-country">Belgium</li>
+                                </ul>
                             </div>
                             </div> <!--another wrapper div-->
 
                         </div> <!--divided column-->
                         
                     </div> <!--another container-->
-
+                    
+                    <div>
                     <div class="card weather-card">
                         <h2>weather</h2>
                         <div class="uk-flex uk-flex-middle">
@@ -198,6 +197,7 @@
                         </div> <!--month grid container-->
 
                     </div>
+                </div>
                 </div> <!--second column-->
             </div> <!--grid-->
             </div> <!--uk container-->
