@@ -2,14 +2,36 @@ html {
     font-family: Montserrat,sans-serif;
     font-style: normal;
     font-size: 20px;
+    color: #383838;
 }
 body {
     min-height: 100vh;
+    padding: 15px;
+}
+
+h1 {
+    font-family: Termina,sans-serif;
+    font-size: 48px;
+    font-style: normal; 
+    font-weight: 500;
+}
+
+h2 {
+    font-family: Termina,sans-serif;
+    font-size: 36px;
+    font-style: normal; 
+    font-weight: 800; 
+}
+
+.bold {
+    font-weight: 800;
 }
 
 .page-container {
-    max-width: 1100px;
+    max-width: 1270px;
     margin: auto;
+    width: 100%;
+
 }
 
 .uk-navbar-nav > li > a {
@@ -18,4 +40,144 @@ body {
     font-size: 20px;
     font-style: normal;
     text-transform: lowercase;
+}
+
+.search-input {
+    border: none;
+    border-bottom: solid #A55591;
+    font-family: Termina, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: #F05058;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.home-content {
+    width: 100%;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.home-search-input {
+    border: none;
+    border-bottom: solid #A55591;
+    font-family: Termina, sans-serif;
+    font-size: 36px;
+    margin: 30px 0;
+    text-align: center;
+    width: 70%;
+}
+
+.home-button {
+    background: rgba(255, 255, 255, 0.8);
+    border: solid #F05058;
+    border-radius: 40px;
+    border-width: 4px;
+    font-family: Termina, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 0px 30px;
+    text-transform: lowercase;
+}
+
+.home-image {
+    width: 100%;
+    position: fixed;
+    bottom: -65px;
+    left: 0;
+    z-index: -99;
+}
+
+/* dashboard header */
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.header-intro {
+    color: #A55591;
+}
+
+.header-country {
+    color: #F05058;
+    font-weight: 800;
+}
+
+.bookmark {
+    font-size: 32px;
+    color: #F05058;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.bookmark:hover {
+    opacity: .8;
+}
+
+/* DASHBOARD CARDS */
+
+.card {
+    border: solid 3px;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+.main-link {
+    color: #4AA19B;
+    text-decoration: underline;
+}
+
+.main-link:hover {
+    color: #07dfd4;
+}
+
+.water-status {
+    font-size: 48px;
+}
+
+.water-icon {
+    color: #4AA19B;
+    font-size: 90px; 
+    margin: 20px;
+}
+
+.big-temp {
+    color: #4AA19B;
+    font-family: Termina, sans-serif;
+    font-size: 110px;
+    font-weight: 800;
+    margin-right: 30px;
+}
+
+.avg-text {
+    color: #4AA19B;
+    font-family: Termina, sans-serif;
+    text-align: center;
+}
+
+#avg-current-month {
+    font-weight: 800;
+}
+
+.month-btn {
+    background-color: #C39CB7;
+    color: white;
+    font-family: Termina, sans-serif;
+    font-size: 14px;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    margin: 10px 4px;
+
+}
+
+.active-month {
+    background-color: #F05058;
 }
