@@ -1,0 +1,46 @@
+html {
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #383838;
+    background-image: url("/Users/fatimafakih/Travelmate/assets/images/Cityscapes-Town.png");
+}
+body {
+    min-height: 100vh;
+    padding: 15px;
+}
+.dis-none{
+    display: none;
+}
+#navbar_toggle{
+    position: absolute;
+    right: 1em;
+    top: 2em;
+}
+.h-40{
+    height: 40px !important;
+    min-height: 40px;
+}
+.logo{ width:70px; }
+
+@media screen and (max-width:768px){
+    .uk-navbar-left{
+        display: block;
+        width: 100%;
+    }
+    .uk-navbar-item{ display: inline; }
+    
+    .uk-navbar-nav{ display:block; }
+    .navbar-collapse{ width:100%; }
+    .uk-navbar-nav li{
+        display: block;
+        padding: 10px;
+        height: 40px;
+        border-bottom: 1px solid #ddd;
+    }
+    .uk-navbar-nav li a{
+        display: block;
+        width: 80%;
+        padding: 0.5rem 1rem;
+    }
+}
