@@ -25,10 +25,10 @@
   <body>
     <div class="page-container">
         
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@s" uk-navbar>
             <div class="uk-navbar-left">
         
-                <a class="uk-navbar-item uk-logo" href="#">
+                <a class="uk-navbar-item uk-logo" href="../index.html">
                     <img src="../assets/images/travlmate-logo-02.png" alt="Travlmate logo" style="width: 200px;"/>
                 </a>
             </div>
@@ -50,19 +50,48 @@
                 </ul>
         
                 <div class="uk-navbar-item">
-                    <form action="javascript:void(0)">
-                        <input class="search-input" type="text" placeholder="">
-                        <button class="search-button"><i class="fas fa-search"></i></button>
+                    <form id="nav-form" method="POST">
+                        <input class="search-input" type="text" placeholder="" id="search-nav">
+                        <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
         
             </div>
         </nav>
 
+        <!--Mobile nav-->
+        <!--Top-->
+        <div class=" uk-flex uk-flex-center uk-hidden@s">
+            <a class="uk-logo" href="../index.html">
+                <img src="../assets/images/travlmate-logo-02.png" alt="Travlmate logo" style="width: 150px;"/>
+            </a>
+        </div>
+        <!--Bottom-->
+        <div class="uk-hidden@s">
+            <div class="uk-container-center mobile-nav">
+                <div class="uk-grid-collapse uk-child-width-expand uk-text-center" uk-grid>
+                    <div class="mob-nav-button">
+                        <a class="white"><i class="fas fa-home"></i></a>
+                    </div>
+                    <div class="mob-nav-button">
+                        <a class="white"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                    <div class="mob-nav-button no-border">
+                        <div class="white"><i class="fas fa-bookmark"></i></div>
+                    </div>
+                    <div class="mobile-drop" uk-drop="pos: top-right; mode: click">
+                        <ul class="uk-list countries-list">
+                            <li class="countries-placeholder">Bookmark searched countries to add here</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
         <div class="page-container">
             <div class="header uk-flex uk-flex-center uk-flex-top">
-                <h1><span class="header-intro">So you want to go to </span> <span class="header-country">Netherlands</span></h1>
-                <i class="far fa-bookmark bookmark"></i>
+                <h1><span class="header-intro">So you want to go to </span> <span class="header-country"></span><i class="far fa-bookmark bookmark"></i></h1> 
             </div> <!--header-->
 
             <div class="uk-container-center">
@@ -71,32 +100,11 @@
                 <div class="uk-width-1-3@s">
                     <div class="card overview-card">
                         <h2>overview</h2>
-                        <p><span class="bold">capital: </span> <span id="capital-city">Amsterdam</span></p>
-                        <p><span class="bold">language: </span> <span id="official-language">Dutch</span></p>
-                        <p><span class="bold">country code: </span> <span id="country-code">+31</span></p>
+                        <p><span class="bold">capital: </span> <span id="capital-city"></span></p>
+                        <p><span class="bold">region: </span> <span id="region"></span></p>
+                        <p><span class="bold">language(s): </span> <span id="official-language"></span></p>
+                        <p><span class="bold">country code: </span> <span id="country-code"></span></p>
                     </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <div class="card currency-card">
-                        <h2>currency</h2>
-                        <p>euro</p>            
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <div class="card neighbours-card">
-                        <h2>neighbours</h2>
-                        <ul class="uk-list">
-                            <li class="neighbour-country">Belgium</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="uk-grid-medium uk-grid-match" uk-grid>
-                <div class="uk-width-1-3@s">
-                
                    
                     <div class="card advice-card">
                         <h2>travel advice</h2>
@@ -108,82 +116,104 @@
                         <h2>water</h2>
                         <div class="uk-flex uk-flex-middle uk-flex-between">
                             <p class="water-status">safe</p>
-                            <i class="fas fa-tint water-icon"></i>
+                            <i class="water-icon fas" id="water-icon"></i>
                         </div> <!--water card content-->
                     </div>
                 </div> <!--first column-->
                 
                 <div class="uk-width-2-3@s">
                     
+                    <div class="uk-container-center cards-container">
 
+                        <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                            <div class="">
+                            <div class="card currency-card">
+                                <h2>currency</h2>
+                                <p>The currency in <span id="currency-country" class="currency-highlight"></span> is the <span id="currency-text" class="currency-highlight"></span></p>            
+                            </div>
+                            </div> <!--another wrapper div-->
+
+                            <div>
+                            <div class="card neighbours-card">
+                                <h2>neighbours</h2>
+                                <ul class="uk-list" id="neighbours-list">
+                                    <!--Dynamic neighbour countries populated here-->
+                                </ul>
+                            </div>
+                            </div> <!--another wrapper div-->
+
+                        </div> <!--divided column-->
+                        
+                    </div> <!--another container-->
+                    
                     <div>
                     <div class="card weather-card">
                         <h2>weather</h2>
-                        <div class="uk-flex@m uk-flex-middle">
-                            <div id="temperature-current" class="big-temp">28.8°C</div>
-                            <div class="avg-text">average temperature in</br>
-                                <span id="avg-current-month">JANUARY</span></div>
+                        <div class="uk-flex uk-flex-row@m uk-flex-column uk-flex-middle">
+                            <div class="avg-text">average temperature in 
+                                <span id="avg-current-month"></span></div>
+                            <div id="temperature-current" class="big-temp"></div>
                         </div>
 
                         <div class="uk-container-center">
                             <div class="uk-grid-collapse" uk-grid>
                                 <div>
-                                    <div id="btn-month-1" class="month-btn active-month">
+                                    <div id="January" class="month-btn active-month">
                                         Jan
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-2" class="month-btn">
+                                    <div id="February" class="month-btn">
                                         Feb
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-3" class="month-btn">
+                                    <div id="March" class="month-btn">
                                         Mar
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-4" class="month-btn">
+                                    <div id="April" class="month-btn">
                                         Apr
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-5" class="month-btn">
+                                    <div id="May" class="month-btn">
                                         May
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-6" class="month-btn">
+                                    <div id="June" class="month-btn">
                                         Jun
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-7" class="month-btn">
+                                    <div id="July" class="month-btn">
                                         Jul
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-8" class="month-btn">
+                                    <div id="August" class="month-btn">
                                         Aug
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-9" class="month-btn">
+                                    <div id="September" class="month-btn">
                                         Sep
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-10" class="month-btn">
+                                    <div id="October" class="month-btn">
                                         Oct
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-11" class="month-btn">
+                                    <div id="November" class="month-btn">
                                         Nov
                                     </div>
                                 </div>
                                 <div>
-                                    <div id="btn-month-12" class="month-btn">
+                                    <div id="December" class="month-btn">
                                         Dec
                                     </div>
                                 </div>
@@ -212,12 +242,15 @@
 
     <!--Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- SCRIPTS -->
-   <script src="..\assets\script\travelAPI.js"></script>
+
     <!--Moment.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
+   
+    <!-- OUR SCRIPTS -->
+    <script src="..\assets\scripts\travelAPI.js"></script>
     <!--Bookmark function-->
     <script src="../assets/scripts/bookmark.js"></script>
+    <!--Dashboard only functions-->
+    <script src="../assets/scripts/dashboard.js"></script>
   
 </body>

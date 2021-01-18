@@ -5,7 +5,7 @@ html {
     color: #383838;
 }
 body {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 15px;
 }
 
@@ -30,11 +30,8 @@ h2 {
 .page-container {
     max-width: 1270px;
     margin: auto;
+    margin-bottom: 80px;
     width: 100%;
-
-}
-.uk-navbar-container{
-    min-width: 600px;
 }
 
 .uk-navbar-nav > li > a {
@@ -67,14 +64,20 @@ h2 {
     text-align: center;
 }
 
+#home-form {
+    margin: auto;
+    max-width: 700px;
+}
+
 .home-search-input {
+    background: none;
     border: none;
     border-bottom: solid #A55591;
     font-family: Termina, sans-serif;
-    font-size: 36px;
+    font-size: 20px;
     margin: 30px 0;
     text-align: center;
-    width: 70%;
+    width: 100%;
 }
 
 .home-button {
@@ -90,10 +93,12 @@ h2 {
 }
 
 .home-image {
-    width: 100%;
+    margin-left: -100px;
+    min-width: 800px;
     position: fixed;
-    bottom: -65px;
+    bottom: 70px;
     left: 0;
+    width: 100%;
     z-index: -99;
 }
 
@@ -111,8 +116,9 @@ h2 {
 }
 
 .saved-country {
-    padding: 7px 5px;
     cursor: pointer;
+    padding: 7px 5px;
+    text-transform: capitalize;
 }
 
 .saved-country:hover {
@@ -143,14 +149,17 @@ h2 {
 }
 
 .bookmark {
-    font-size: 32px;
+    font-size: 24px;
     color: #F05058;
     margin-left: 15px;
     cursor: pointer;
+    position: relative;
+    top: -5px;
 }
 
 .bookmark:hover {
     opacity: .8;
+    transition: .2s ease;
 }
 
 /* DASHBOARD CARDS */
@@ -168,6 +177,7 @@ h2 {
 
 .main-link:hover {
     color: #07dfd4;
+    transition: .2s ease;
 }
 
 .water-status {
@@ -196,6 +206,7 @@ h2 {
 
 #avg-current-month {
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .month-btn {
@@ -221,8 +232,26 @@ h2 {
     border-bottom: solid 1px #bebebe;
 }
 
+.neighbour-country:hover {
+    color: #C39CB7;
+    transition: .2s ease;
+}
+
 .cards-container {
     margin-bottom: 25px;
+}
+
+.currency-highlight {
+    color: #4AA19B;
+    font-weight: 700;
+}
+
+#currency-country {
+    text-transform: capitalize;
+}
+
+#currency-text {
+    text-transform: uppercase;
 }
 
 
@@ -286,6 +315,44 @@ h2 {
     color: #C39CB7;
 }
 
+/* MOBILE NAV */
+.mobile-nav {
+    background-color: #A55591;
+    color: white;
+    margin-left: -15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.mob-nav-button {
+    background-color: #A55591;
+    padding: 20px;
+    border: none;
+    border-right: solid white 2px;
+}
+
+.no-border {
+    border: none;
+}
+
+.white {
+    color: white;
+}
+
+.white:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.white:visited {
+    color: white;
+}
+
+.mobile-drop {
+    background-color: #773c68;
+    padding: 20px;
+}
+
 @media (min-width: 768px) { 
     h1 {
         font-size: 48px;
@@ -295,7 +362,30 @@ h2 {
         font-size: 36px;
     }
 
-    .big-temp{
+    .home-image {
+        margin-left: 0;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: -99;
+    }
+
+    .big-temp {
         font-size: 110px;
+    }
+
+    .page-container {
+        margin-bottom: 0;
+    }
+
+    .home-search-input {
+        font-size: 36px;
+    }
+
+    .bookmark {
+        font-size: 32px;
+        position: relative;
+        top: -15px;
     }
 }
