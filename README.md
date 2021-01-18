@@ -28,53 +28,40 @@ I WANT to access a dashboard with useful information about the country I intend 
 SO THAT I plan my trip accordingly.
 
 ## Acceptance Criteria
-_GIVEN a travel dashboard with form inputs 
+<i>GIVEN a travel dashboard with form inputs 
 
-WHEN I search for a country 
+*WHEN I search for a country 
 <br>THEN I am presented with an overview, currency, neighbours, travel advice, water quality and monthly average weather for that country<br>
 WHEN I view the overview for that country<br>
 THEN I am presented with the Capital city, spoken languages and country code<br>
 WHEN I view the currency for that country
-THEN I am presented with a list of the top 10 currencies used in the world/exchanged. 
-
-WHEN I input an amount of AUD to exchange 
-THEN I am presented with the amount in the currency for that country 
-
-WHEN I click on the currency dropdown
-THEN I am presented with a list of optional currencies to exchange
-
-WHEN I view the neighbours for that country 
-THEN I am presented with a list of countries
-
-WHEN I click on a neighbouring country
-THEN I can view the information for that country and bookmark it 
-
-WHEN I view the travel advice for that country 
-THEN I am presented with the type of precautions to exercise 
-
-WHEN I click on the “see more” link in the travel advice 
-THEN I am presented with the official travel advice page in separate browser window
-
-WHEN I view the water for that country 
-THEN I am presented with a water-drop icon and “safe” prompting it is safe to drink tap water
-
-WHEN I view the water for that country 
-THEN I am presented with a water-drop icon with a strike-through it and “not safe” prompting it is only safe to drink bottled water or unknown if the status is unknown
-
-WHEN I view the weather for that country 
-THEN I am presented with the average weather for the current month and the button for current month changes to red
-
-WHEN I click on the month buttons in the weather 
-THEN I am presented with the average weather and the button changes to red 
-
-WHEN I click the bookmark icon 
-THEN I am can add my searches to the “my countries list”
-
-WHEN I VIEW my countries 
-THEN I am presented with a list of bookmarked Countries 
-
-WHEN I open the travel dashboard 
-THEN I am presented with the last searched country_
+THEN I am presented with a list of the top 10 currencies used in the world/exchanged.<br>
+WHEN I input an amount of AUD to exchange<br>
+THEN I am presented with the amount in the currency for that country <br>
+WHEN I click on the currency dropdown<br>
+THEN I am presented with a list of optional currencies to exchange<br>
+WHEN I view the neighbours for that country <br>
+THEN I am presented with a list of countries<br>
+WHEN I click on a neighbouring country<br>
+THEN I can view the information for that country and bookmark it <br>
+WHEN I view the travel advice for that country <br>
+THEN I am presented with the type of precautions to exercise <br>
+WHEN I click on the “see more” link in the travel advice <br>
+THEN I am presented with the official travel advice page in separate browser window<br>
+WHEN I view the water for that country <br>
+THEN I am presented with a water-drop icon and “safe” prompting it is safe to drink tap water<br>
+WHEN I view the water for that country <br>
+THEN I am presented with a water-drop icon with a strike-through it and “not safe” prompting it is only safe to drink bottled water or unknown if the status is unknown<br>
+WHEN I view the weather for that country <br>
+THEN I am presented with the average weather for the current month and the button for current month changes to red<br>
+WHEN I click on the month buttons in the weather <br>
+THEN I am presented with the average weather and the button changes to red <br>
+WHEN I click the bookmark icon <br>
+THEN I am can add my searches to the “my countries list”<br>
+WHEN I VIEW my countries <br>
+THEN I am presented with a list of bookmarked Countries <br>
+WHEN I open the travel dashboard <br>
+THEN I am presented with the last searched country</i>
 
 
 ## Process
