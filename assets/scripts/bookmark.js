@@ -8,14 +8,17 @@ var countriesListEl = $('.countries-list');
 function renderSavedCountries(){
     countriesListEl.html('');
     for(i = 0; i < savedCountries.length; i++){
-        savedCountryItem = $('<li class="saved-country">');
+        savedCountryItem = $('<li class="uk-flex uk-flex-between uk-flex-middle saved-country">');
         savedCountryItem.text(savedCountries[i]);
         countriesListEl.append(savedCountryItem);
+
+        var trashButton = $('<i class="far fa-trash-alt fa-xs" data-country=' + '"' + savedCountries[i] + '">');
+        savedCountryItem.append(trashButton);
     }
 }
 
 //save current country when bookmark is clicked
-$('.bookmark').on('click', function(){
+$('.far').on('click', function(){ // how to distinguish between saving and deleting...
     $(this).toggleClass('far');
     $(this).toggleClass('fas');
 

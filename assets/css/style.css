@@ -11,14 +11,14 @@ body {
 
 h1 {
     font-family: Termina,sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     font-style: normal; 
     font-weight: 500;
 }
 
 h2 {
     font-family: Termina,sans-serif;
-    font-size: 36px;
+    font-size: 30px;
     font-style: normal; 
     font-weight: 800; 
 }
@@ -32,6 +32,9 @@ h2 {
     margin: auto;
     width: 100%;
 
+}
+.uk-navbar-container{
+    min-width: 600px;
 }
 
 .uk-navbar-nav > li > a {
@@ -180,7 +183,7 @@ h2 {
 .big-temp {
     color: #4AA19B;
     font-family: Termina, sans-serif;
-    font-size: 110px;
+    font-size: 72px;
     font-weight: 800;
     margin-right: 30px;
 }
@@ -281,4 +284,18 @@ h2 {
 
 .neighbours-card h2 {
     color: #C39CB7;
+}
+
+@media (min-width: 768px) { 
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .big-temp{
+        font-size: 110px;
+    }
 }

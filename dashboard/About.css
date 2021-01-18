@@ -1,0 +1,58 @@
+html {
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #383838;
+}
+body {
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.img1{
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+.img2{
+    position: absolute;
+    top: 400px;
+    right: 50px;
+}
+.bold {
+    font-weight: 800;
+}
+
+.page-container {
+    max-width: 1270px;
+    margin: auto;
+    width: 100%;
+}
+
+.uk-text-center{
+    margin-top:250px;
+    
+}
+
+p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.travelmate{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+   
+} 
+.purple{
+    color:  #A55591;
+    
+}
+
+.red{
+    color:  #F05058;
+    margin-bottom: 0px;
+}
