@@ -1,7 +1,7 @@
 //media query event handler
 if(matchMedia){
     const mq = window.matchMedia( "(max-width:768px)" );//sets the width you want
-    mq.addListener(WidthChange);
+    mq.addEventListener(WidthChange);
     WidthChange(mq)
 }
 

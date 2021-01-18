@@ -44,3 +44,25 @@ body {
         padding: 0.5rem 1rem;
     }
 }
+.background-grid{
+
+}
+.uk-position-top-leftuk-overlayuk-overlay-default{
+    background-image: Users/fatimafakih/Travelmate/assets/images/about-01.png
+
+}
+    
+.background-left{
+    border: 1px solid grey;
+    background-color: red;
+    margin:0;
+}
+.background-right{
+    border:1px solid grey;
+    background-color: hotpink;
+    margin:0;
+    text-align: right;
+}
+.uk-container{
+    padding:0;
+}

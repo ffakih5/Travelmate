@@ -8,51 +8,77 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://use.typekit.net/ifi5zvx.css">
-        <link rel="stylesheet" href="/Users/fatimafakih/Travelmate/dashboard/About.css">
 
         <title>Travlmate | About</title>
 
     </head>
 
     <body>
-        <header>
-            <nav class="uk-navbar-container" uk-navbar>
-                <div class="uk-navbar-left">
+        <div class ="page-container">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar> 
+                <div class="uk-navbar-left"> 
                     <a href="index.html" class="uk-navbar-item uk-logo">
                         <img src="/Users/fatimafakih/Travelmate/assets/images/travlmate-logo-02.png" class="logo" alt="logo" srcset="">
                     </a>
+
+
+
+                </div>
+
+
+
+
+
+            </nav>
+
+
+
+        </div>
+
+                    
                     <a class="uk-navbar-toggle dis-none h-40" id="navbar_toggle">
                         <i uk-icon="icon: menu; ratio: 2"></i>
                         
                     </a>
-                    <div class="navbar-collapse" id="navbar_collapse">
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="">Home</a></li>
-                            <li class="uk-parent"><a href="">About</a></li>
-                            <li class="uk-parent"><a href="">Blog</a></li>
-                            <li class="uk-parent"><a href="">Services</a></li>
-                            <li><a href="">Log in</a></li>
+                    <div class="navbar-right" id="navbar_right">
+                        <ul class="uk-navbar-nav ">
+                            <li>
+                                <a href="#">
+                                About
+                                </li>
+                            <li>
+                                <a href="">My Countries</a>
+                                <div class="countries-dropdown" uk-drop="offset: -20">
+                                    <ul class="uk-list countries-list">
+                                        <li class="countries-placeholder">Bookmark searched countries to add here</li>
+                            </li>
                         </ul>
+                        <div class="uk-navbar-item">
+                            <form action="javascript:void(0)">
+                                <input class="search-input" type="text" placeholder="">
+                                <button class="search-button"><i class="fas fa-search"></i></button>
+                            </form>
                     </div>
                 </div>
             </nav>
-        </header>
-        <div class="logo-wrapper">
-            <div class="uk-container uk-container-center ">
-                
-                <div class="uk-grid">
-                    <div class="uk-width-small-5-10">  Travlmate is a site designed to help eager travellers understanda little bit more about the destinations they are going to. The site is a quick and easy way to access key information about a traveller’s country of choice including water safety, currency and neighbouring countries. Designed to help prepare travellers and aid trip planning and organisation, TravlMate is the ideal travel companion.
+
+        <div>
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-width-1-2">
+                        <img src="/Users/fatimafakih/Travelmate/assets/images/about-01.png">
+                    </div>
+                    <div class="uk-width-1-2">
+                        <img src="/Users/fatimafakih/Travelmate/assets/images/about-02.png"> 
                     </div>
                 </div>
-    
-                <div class="uk-grid">
+
+                <div class="uk-overlay uk-position-top-center"> 
+                    <div uk-grid class="uk-child-width-expand">
+                    <div class="uk-grid-1-5"></div>
+                    <div class="uk-text-center"> Water my plants <br> I'm going travelling</div>
                 </div>
-                <div class="uk-width-small-5-10"> IMAGES <br>
-                    IMAGES <br>
-                    IMAGES <br>
-                    <img src="/Users/fatimafakih/Travelmate/assets/images/Cityscapes - Town.png" alt="Cityscapes">
-    
-                </div>
+            </div>
+            
             </div> <!---container-->
  
         </div> <!---logo wrapper-->
