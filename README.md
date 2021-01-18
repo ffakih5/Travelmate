@@ -21,16 +21,14 @@ The motivation behind this project stemmed from the shared yearning to pack up a
 We drew on our personal experiences with travel and brought to light what we consider to be the key elements to ensuring you have a successful trip, wherever your destination may be!
 
 ## User Story
-AS A traveller/ blogger 
-
-I WANT to access a dashboard with useful information about the country I intend to visit/share about.
-
-SO THAT I plan my trip accordingly.
+AS A traveller/ blogger <br>
+I WANT to access a dashboard with useful information about the country I intend to visit/share about. <br>
+SO THAT I plan my trip accordingly. <br>
 
 ## Acceptance Criteria
 <i>GIVEN a travel dashboard with form inputs 
 
-*WHEN I search for a country 
+WHEN I search for a country 
 <br>THEN I am presented with an overview, currency, neighbours, travel advice, water quality and monthly average weather for that country<br>
 WHEN I view the overview for that country<br>
 THEN I am presented with the Capital city, spoken languages and country code<br>
@@ -101,6 +99,7 @@ Desktop
 - [Adobe XD](https://www.adobe.com/au/products/xd.html) (prototyping)
 - [Travel Briefing](https://travelbriefing.org/api) API 1 to pull country information
 - [Exchange Rate](https://ratesapi.io/) API 2 to convert currenices
+- [Rest](https://restcountries.eu/) API 3 to display capital cities, regions and languages
 
 ## Features
 - Search for any country 
