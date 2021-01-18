@@ -353,6 +353,27 @@ h2 {
     padding: 20px;
 }
 
+/* ABOUT PAGE */
+.about-container {
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.about-img-1 {
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    z-index: -99;
+}
+
+.about-img-2 {
+    width: 300px;
+    position: static;
+    margin: auto;
+    z-index: -99;
+}
+
 @media (min-width: 768px) { 
     h1 {
         font-size: 48px;
@@ -387,5 +408,13 @@ h2 {
         font-size: 32px;
         position: relative;
         top: -15px;
+    }
+
+    .about-img-2 {
+        width: 650px;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        z-index: -99;
     }
 }

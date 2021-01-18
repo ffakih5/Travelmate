@@ -69,7 +69,11 @@ $(document.body).on('click', '.saved-country-click', function(){
 $(document.body).on('click', '.fa-trash-alt', function(){
    
     country = $(this).siblings().text();
-    //console.log(country); //checking value
+
+    if (country === $('.header-country').text()) {
+        $('.bookmark').removeClass('far fas');
+        $('.bookmark').addClass('far');
+    }
 
     savedCountries = $.grep(savedCountries, function(value){
         return value !== country;
