@@ -31,11 +31,9 @@ SO THAT I plan my trip accordingly.
 _GIVEN a travel dashboard with form inputs 
 
 WHEN I search for a country 
-THEN I am presented with an overview, currency, neighbours, travel advice, water quality and monthly average weather for that country
-
-WHEN I view the overview for that country
-THEN I am presented with the Capital city, spoken languages and country code
-
+<br>THEN I am presented with an overview, currency, neighbours, travel advice, water quality and monthly average weather for that country<br>
+WHEN I view the overview for that country<br>
+THEN I am presented with the Capital city, spoken languages and country code<br>
 WHEN I view the currency for that country
 THEN I am presented with a list of the top 10 currencies used in the world/exchanged. 
 
