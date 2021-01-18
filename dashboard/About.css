@@ -3,66 +3,56 @@ html {
     font-style: normal;
     font-size: 20px;
     color: #383838;
-    background-image: url("/Users/fatimafakih/Travelmate/assets/images/Cityscapes-Town.png");
 }
 body {
     min-height: 100vh;
     padding: 15px;
 }
-.dis-none{
-    display: none;
-}
-#navbar_toggle{
+
+.img1{
     position: absolute;
-    right: 1em;
-    top: 2em;
+    top: 450px;
+    left: 50px;
 }
-.h-40{
-    height: 40px !important;
-    min-height: 40px;
+.img2{
+    position: absolute;
+    top: 400px;
+    right: 50px;
 }
-.logo{ width:70px; }
+.bold {
+    font-weight: 800;
+}
 
-@media screen and (max-width:768px){
-    .uk-navbar-left{
-        display: block;
-        width: 100%;
-    }
-    .uk-navbar-item{ display: inline; }
+.page-container {
+    max-width: 1270px;
+    margin: auto;
+    width: 100%;
+}
+
+.uk-text-center{
+    margin-top:250px;
     
-    .uk-navbar-nav{ display:block; }
-    .navbar-collapse{ width:100%; }
-    .uk-navbar-nav li{
-        display: block;
-        padding: 10px;
-        height: 40px;
-        border-bottom: 1px solid #ddd;
-    }
-    .uk-navbar-nav li a{
-        display: block;
-        width: 80%;
-        padding: 0.5rem 1rem;
-    }
 }
-.background-grid{
 
+p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
-.uk-position-top-leftuk-overlayuk-overlay-default{
-    background-image: Users/fatimafakih/Travelmate/assets/images/about-01.png
 
-}
+.travelmate{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+   
+} 
+.purple{
+    color:  #A55591;
     
-.background-left{
-    border: 1px solid grey;
-    background-color: red;
-    margin:0;
 }
-.background-right{
-    border:1px solid grey;
-    background-color: hotpink;
-    margin:0;
-    text-align: right;
-}
-.uk-container{
-    padding:0;
+
+.red{
+    color:  #F05058;
+    margin-bottom: 0px;
 }
