@@ -96,8 +96,8 @@ Desktop
 - [JQuery](https://jquery.com/)
 - [Moment.js](https://momentjs.com/)
 - [Adobe XD](https://www.adobe.com/au/products/xd.html) (prototyping)
-- [TravelBriefing] (https://travelbriefing.org/api) API 1 to pull country information
-- [ExchangeRate] (https://ratesapi.io/) API 2 to convert currenices
+- [Travel Briefing](https://travelbriefing.org/api) API 1 to pull country information
+- [Exchange Rate](https://ratesapi.io/) API 2 to convert currenices
 
 ## Features
 - Search for any country 
@@ -119,4 +119,4 @@ Desktop
 
 ## Credits
 The search icon, bookmark icon and trash icon are from https://fontawesome.com/
-The images are from https:
+The images are from https://blush.design/
