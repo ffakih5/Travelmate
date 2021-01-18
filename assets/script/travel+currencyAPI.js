@@ -80,7 +80,7 @@ function getRate (quote) {
             $("#currency-list").append(option)
         })
         
-    })   
+    })    
 
 
     // Append children within the card
