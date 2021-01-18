@@ -24,7 +24,8 @@
 
   <body>
     <div class="page-container">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@s" uk-navbar>
             <div class="uk-navbar-left">
         
                 <a class="uk-navbar-item uk-logo" href="#">
@@ -38,62 +39,79 @@
                             About
                         </a>
                     </li>
-                </ul>
-        
-                <ul class="uk-navbar-nav">
                     <li>
                         <a href="">My Countries</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li>
-                                    Netherlands
-                                </li>
-                                <li>
-                                    Sweden
-                                </li>
+                        <div class="countries-dropdown" uk-drop="offset: -20">
+                            <ul class="uk-list countries-list">
+                                <li class="countries-placeholder">Bookmark searched countries to add here</li>
                             </ul>
                         </div>
                     </li>
                 </ul>
         
-                <div class="uk-navbar-item">
-                    <form action="javascript:void(0)">
-                        <input class="search-input" type="text" placeholder="">
-                        <button class="search-button"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
-        
             </div>
         </nav>
+
+        <!--Mobile nav-->
+        <!--Top-->
+        <div class=" uk-flex uk-flex-center uk-hidden@s">
+            <a class="uk-logo" href="index.html">
+                <img src="assets/images/travlmate-logo-02.png" alt="Travlmate logo" style="width: 150px;"/>
+            </a>
+        </div>
+        <!--Bottom-->
+        <div class="uk-hidden@s">
+            <div class="uk-container-center mobile-nav">
+                <div class="uk-grid-collapse uk-child-width-expand uk-text-center" uk-grid>
+                    <div class="mob-nav-button">
+                        <a class="white"><i class="fas fa-home"></i></a>
+                    </div>
+                    <div class="mob-nav-button">
+                        <a class="white"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                    <div class="mob-nav-button no-border">
+                        <div class="white"><i class="fas fa-bookmark"></i></div>
+                    </div>
+                    <div class="mobile-drop" uk-drop="pos: top-right; mode: click">
+                        <ul class="uk-list countries-list">
+                            <li class="countries-placeholder">Bookmark searched countries to add here</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="uk-flex uk-flex-center uk-flex-middle home-content">
             <div class="uk-flex-column">
                 <h1>Packing my bags and going to...</h1>
-                <form action="javascript:void(0)">
-                    <input class="home-search-input" type="text" placeholder="">
-                </form>
-                <button class="home-button" id="home-search">Search</i></button>
+                <form id="home-form" method="POST">
+                    <input class="home-search-input" type="text" placeholder="Search for a country" name="search-country-home" id="search-country-home" />
+                    <button type="submit" class="home-button" id="home-search">Search</button>
+                  </form>
             </div>
         </div>
 
-        <img class="home-image" src="assets/images/Cityscapes - Town.png" alt="travel destinations"/>
+        <img class="home-image" src="assets/images/TravlMate-Town-01.svg" alt="travel destinations"/>
     
     </div>
-    <img class="home-image" src="assets/images/Cityscapes - Town.png" alt="travel destinations"/>
-
     
 
 
     <!-- SCRIPTS -->
-    <script src="./assets/moment.js"></script>
+
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
 
     <!--Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Moment.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
+    
+    <!--Travel API-->
+    <script src="assets/scripts/travelAPI.js"></script>
+    <!--Bookmark function-->
+    <script src="assets/scripts/bookmark.js"></script>
+    <!--home only script-->
+    <script src="assets/scripts/home.js"></script>
   
 </body>
