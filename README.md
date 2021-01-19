@@ -1,10 +1,11 @@
 # TravlMate
-TravlMate is a website for travel enthusiasts and bloggers to access helpful information that can aid planning for any trip or research for an article or post. 
-The benefit of the site is that it is a one-stop-shop for information. It saves users time and effort having to search across many sites for a variety of information they might need. Instead, TravlMate is an easy to use service that instantly collates valuable facts in one place, including currency, water safety, neighbouring countries and much more.
-Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  TravlMate. 
+TravlMate is a website for travel enthusiasts and bloggers to access helpful information that can aid planning for a trip or research for an article or post.<br>
+The benefit of the site is that it is a one-stop-shop for information. It saves users time and effort having to search across many sites for a variety of information they might need. Instead, TravlMate is an easy to use service that instantly collates valuable facts in one place, including currency, water safety, neighbouring countries and much more.<br>
+<i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  TravlMate. </i></b>
 
 
-[See deployed application.](update link)
+<br> ##See Deployed Application Link:
+<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate </a>
 
 ## Table of contents
   - [Motivation](#motivation)
@@ -71,18 +72,18 @@ We decided that we would need the site to have searchability as well as the abil
 
 
 ## Mockups
-<b>Mobile Homepage</b>
+<b>Mobile Homepage</b></br>
 ![MobileHomepage](assets/images/screenshots/Mobile_Homepage.png)
 
 
-<b>Mobile Dashboard</b>
+<b>Mobile Dashboard</b></br>
 ![MobileDashboard](assets/images/screenshots/Mobile_Dashboard.png)
 
-<b>Desktop Homepage</b>
+<b>Desktop Homepage</b></br>
 ![DesktopHomepage](assets/images/screenshots/Desktop_Homepage.png)
 
 
-<b>Desktop Dashboard</b>
+<b>Desktop Dashboard</b></br>
 
 ## Built with
 - [UI Kit](https://getbootstrap.com/)
@@ -106,7 +107,7 @@ We decided that we would need the site to have searchability as well as the abil
 - Mobile Responsive site
 
 
-## Fucntionality
+## Fucntionality </br>
 ![TravlMate GIF](https)
 
 ### [See deployed application](update link)
