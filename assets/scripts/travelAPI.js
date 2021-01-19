@@ -74,7 +74,7 @@ $.ajax({
     } else {
         $("#travel-advice-text").text(response.advise.UA.advise); // australian advice - add what to do if undefined
         $("#travel-advice-link").text('See more');
-        $("#travel-advice-link").attr('href', response.advise.UA.url); //changed -- correct now
+        $("#travel-advice-link").attr('href', 'https://www.smartraveller.gov.au/search?search=' + country); //changed -- to search on aus website
     }
 
     // WATER CARD
