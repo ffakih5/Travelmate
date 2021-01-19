@@ -1,10 +1,12 @@
 console.log('connected');
 
 var country;
+var currencyCode;
 // NAV SEARCH EVENT
 // Changed search button click to form submit
 $("#nav-form").on('submit', function () {
     event.preventDefault();
+    currencyCode = '';
     var searchVal = $('#search-nav').val();
     country = searchVal.trim();
     country = country.toLowerCase();
@@ -12,17 +14,14 @@ $("#nav-form").on('submit', function () {
     if (country === ''){
         return;
     }
-    var previousCountry = localStorage.getItem('current country');
-    console.log(previousCountry)
     localStorage.setItem('current country', country);
     $('#search-nav').val('');
-    console.log(searchVal);
-    getTravelData(searchVal, previousCountry);
+    getTravelData();
 
 });
 
 
-function getTravelData (input, previous) {
+function getTravelData () {
 
 country = localStorage.getItem('current country');
 
@@ -37,7 +36,7 @@ $.ajax({
 
     //if not on dashboard page, navigate to it
     var pathname = window.location.pathname;
-    //console.log(pathname);  // check pathname
+    console.log(pathname);  // check pathname
     if(pathname !== '/Travelmate/dashboard/index.html'){ //this needs to be changed when deployed
         window.location.pathname="/Travelmate/dashboard/index.html"; //navigate to dashboard
     }
@@ -48,15 +47,8 @@ $.ajax({
 
     // BOOKMARK BUTTON LOOK
 
-
     //check if it is saved
     country = response.names.name;
-
-    // Prevent default "Netherlands" response from showing
-    if (input.toLowerCase() !== country.toLowerCase()) {
-        localStorage.setItem('current country', previous);
-        return;
-    }
 
     var checkarray = jQuery.inArray(country, savedCountries);
 
@@ -107,10 +99,16 @@ $.ajax({
         $('#water-icon').addClass('fa-question');
     }
 
+    // CURRENCY CARD
     $('#currency-country').text(response.names.name);
     $('#currency-text').text(response.currency.name);
+    $('#currency-name').text(response.currency.name);
+    $('#convert-result').text('');
+    currencyCode = response.currency.code;
+    $('#result-code').text(currencyCode);
+    $("#currency-input").val('');
 
-    // Add Neighbours
+    // NEIGHBOURS CARD
     $('#neighbours-list').html('');
     for(i = 0; i < 3; i++) {
         var neighbourItem = $('<li class="neighbour-country">');
@@ -140,9 +138,6 @@ $.ajax({
         temp = parseInt(temp).toFixed(1);
         $('#temperature-current').text(temp + '°C');
     });
-
-
-
 
         // SECOND API to get capital city, region, languages, calling codes (inside travelAPI to solve country name issue)
         var countryName = response.names.name; // full country name for search only
@@ -181,6 +176,12 @@ $.ajax({
 });
 
 };
+
+// currency form event listener
+$('#currency-form').on('submit', function(){
+    event.preventDefault();
+    currencyConvert();
+});
 
 //neighbours event listener - OK
 

@@ -23,6 +23,10 @@ h2 {
     font-weight: 800; 
 }
 
+p {
+    margin: 10px 0;
+}
+
 .bold {
     font-weight: 800;
 }
@@ -256,6 +260,54 @@ h2 {
     text-transform: uppercase;
 }
 
+.currency-explainer {
+    color: #C39CB7;
+    font-size: 12px;
+    margin: 0;
+}
+
+.currency-form {
+    margin-top: 20px;
+}
+
+.currency-input {
+    border: none;
+    border-bottom: solid #A55591;
+    font-family: Termina, sans-serif;
+    font-size: 16px;
+    margin-right: 15px;
+    text-align: left;
+    max-width: 150px;
+}
+
+.currency-select {
+    background-color: #C39CB7;
+    color: #383838;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+
+}
+
+.convert-button {
+    background-color: #A55591;
+    border: none;
+    color: white;
+    font-family: Termina, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 7px 15px;
+    width: 100%;
+}
+
+.currency-result {
+    color: #383838;
+    font-family: Termina, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 25px;
+    text-align: right;
+}
 
 /* CARDS */
 

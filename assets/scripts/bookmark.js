@@ -10,7 +10,7 @@ function renderSavedCountries(){
     savedCountries = JSON.parse(localStorage.getItem('bookmarked countries'));
     //console.log(savedCountries);
 
-    if (savedCountries === null) {
+    if (savedCountries === null || savedCountries.length === 0) {
         savedCountries = [];
         var countriesListPlaceholder = $('<li class="countries-placeholder">');
         countriesListPlaceholder.text('Bookmark searched countries to add here');
