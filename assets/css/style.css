@@ -54,6 +54,7 @@ h2 {
     background: none;
     border: none;
     color: #F05058;
+    cursor: pointer;
     font-size: 20px;
     padding: 5px;
 }
@@ -85,6 +86,7 @@ h2 {
     border: solid #F05058;
     border-radius: 40px;
     border-width: 4px;
+    cursor: pointer;
     font-family: Termina, sans-serif;
     font-weight: 700;
     font-size: 24px;
