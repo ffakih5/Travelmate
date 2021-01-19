@@ -35,12 +35,12 @@ $.ajax({
 })
 .then(function(responseStr) {
 
-    // //if not on dashboard page, navigate to it
-    // var pathname = window.location.pathname;
-    // //console.log(pathname);  // check pathname
-    // if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/Group-Collab/dashboard/index.html'){ //this needs to be changed when deployed
-    //     window.location.href="dashboard/index.html"; //navigate to dashboard
-    // }
+    //if not on dashboard page, navigate to it
+    var pathname = window.location.pathname;
+    //console.log(pathname);  // check pathname
+    if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/Group-Collab/dashboard/index.html'){ //this needs to be changed when deployed
+        window.location.href="dashboard/index.html"; //navigate to dashboard
+    }
 
     // Turn response string to object
     var response = JSON.parse(responseStr)
