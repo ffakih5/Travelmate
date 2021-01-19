@@ -54,7 +54,6 @@ $.ajax({
 
     // Prevent default "Netherlands" response from showing
     if (input.toLowerCase() !== country.toLowerCase()) {
-        console.log("no")
         localStorage.setItem('current country', previous);
         return;
     }
