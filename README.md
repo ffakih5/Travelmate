@@ -69,37 +69,29 @@ We then came to the conclusion that the second API would be a currency converter
 
 We decided that we would need the site to have searchability as well as the ability to bookmark countries you had searched for before.
 
-Fer then went to work on the design coming up with the logo and colour schemes. Then Fatima and Suzie helped Fer research Bootstrap alternatives, eventually Fer went with UI Kit to build the module including the navigation bar, homepage and information dashboard. 
-
-Kevin and Suzie researched the two chosen APIs and worked on the base code to figure out how to call the API. 
-
-Fatima set up the respository and project kaban chart in Github. 
-
-Kevin then worked on the script for the APIs including researching the 10 most traded currencies, as we thought the currency converter should pull a select number instead of users having to look through hundreds of currencies. We decided the top 10 would be a sufficient selection list for users.
-
-Fer finalised the index and css files along with the additional script files required to make certain features work, such as bookmarking. She tested the functionality in the navigation and search bars as well as ensuring the bookmarking feature was dynamic for users.
-
-Fatima managed the repository and any commits that needed to be made by group members, as well as leading all research requirements and helping with any problems that arose.
-
-Suzie worked on the ReadMe file and the Presentation for the final class.
-
-We did testing together and worked to allocate our Presentation sections once we were confident that the site was operating as intended.
 
 ## Mockups
-Mobile
-(image)
+<b>Mobile Homepage</b>
+![MobileHomepage](assets/images/screenshots/Mobile_Homepage.png)
 
-Desktop 
-(image)
+
+<b>Mobile Dashboard</b>
+![MobileDashboard](assets/images/screenshots/Mobile_Dashboard.png)
+
+<b>Desktop Homepage</b>
+![DesktopHomepage](assets/images/screenshots/Desktop_Homepage.png)
+
+
+<b>Desktop Dashboard</b>
 
 ## Built with
 - [UI Kit](https://getbootstrap.com/)
 - [JQuery](https://jquery.com/)
 - [Moment.js](https://momentjs.com/)
 - [Adobe XD](https://www.adobe.com/au/products/xd.html) (prototyping)
-- [Travel Briefing](https://travelbriefing.org/api) API 1 to pull country information
-- [Exchange Rate](https://ratesapi.io/) API 2 to convert currenices
-- [Rest](https://restcountries.eu/) API 3 to display capital cities, regions and languages
+- [Travel Briefing API](https://travelbriefing.org/api) to pull country information
+- [Exchange Rate API](https://ratesapi.io/) to convert currenices
+- [Rest Countries API](https://restcountries.eu/) to display capital cities, regions and languages
 
 ## Features
 - Search for any country 
@@ -115,10 +107,10 @@ Desktop
 
 
 ## Fucntionality
-(insert gif)
+![TravlMate GIF](https)
 
 ### [See deployed application](update link)
 
 ## Credits
-The search icon, bookmark icon and trash icon are from https://fontawesome.com/
+The search icon, bookmark icon and trash icon are from https://fontawesome.com/<br>
 The images are from https://blush.design/
