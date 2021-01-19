@@ -8,8 +8,14 @@ var countriesListEl = $('.countries-list');
 function renderSavedCountries(){
     countriesListEl.html('');
     savedCountries = JSON.parse(localStorage.getItem('bookmarked countries'));
-    console.log(savedCountries);
-    if (savedCountries.length > 0) {
+    //console.log(savedCountries);
+
+    if (savedCountries === null) {
+        savedCountries = [];
+        var countriesListPlaceholder = $('<li class="countries-placeholder">');
+        countriesListPlaceholder.text('Bookmark searched countries to add here');
+        countriesListEl.append(countriesListPlaceholder);
+    } else if (savedCountries.length > 0) {
         for(i = 0; i < savedCountries.length; i++){
             savedCountryItem = $('<li class="uk-flex uk-flex-between uk-flex-middle saved-country">');
             savedCountryClick = $('<div class="saved-country-click">'); //adding extra wrapper around the text for event listener
@@ -21,13 +27,7 @@ function renderSavedCountries(){
 
             countriesListEl.append(savedCountryItem);
         } 
-    } else if (savedCountries.length === 0 || savedCountries === null) {
-        console.log('no saved countries');
-        savedCountries = [];
-        var countriesListPlaceholder = $('<li class="countries-placeholder">');
-        countriesListPlaceholder.text('Bookmark searched countries to add here');
-        countriesListEl.append(countriesListPlaceholder)
-    }
+    }  
 }
 
 renderSavedCountries();
