@@ -4,7 +4,7 @@ The benefit of the site is that it is a one-stop-shop for information. It saves 
 <i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  TravlMate. </i></b>
 
 
-<br> ##See Deployed Application Link:
+<br> <b>See Deployed Application Link: </b>
 <a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate </a>
 
 ## Table of contents
@@ -107,10 +107,9 @@ We decided that we would need the site to have searchability as well as the abil
 - Mobile Responsive site
 
 
-## Fucntionality </br>
+## Functionality </br>
+<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate </a><br>
 ![TravlMate GIF](https)
-
-### [See deployed application](update link)
 
 ## Credits
 The search icon, bookmark icon and trash icon are from https://fontawesome.com/<br>
