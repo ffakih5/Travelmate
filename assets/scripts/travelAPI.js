@@ -12,14 +12,17 @@ $("#nav-form").on('submit', function () {
     if (country === ''){
         return;
     }
+    var previousCountry = localStorage.getItem('current country');
+    console.log(previousCountry)
     localStorage.setItem('current country', country);
     $('#search-nav').val('');
-    getTravelData();
+    console.log(searchVal);
+    getTravelData(searchVal, previousCountry);
 
 });
 
 
-function getTravelData () {
+function getTravelData (input, previous) {
 
 country = localStorage.getItem('current country');
 
@@ -45,8 +48,15 @@ $.ajax({
 
     // BOOKMARK BUTTON LOOK
 
+
     //check if it is saved
     country = response.names.name;
+
+    // Prevent default "Netherlands" response from showing
+    if (input.toLowerCase() !== country.toLowerCase()) {
+        localStorage.setItem('current country', previous);
+        return;
+    }
 
     var checkarray = jQuery.inArray(country, savedCountries);
 
