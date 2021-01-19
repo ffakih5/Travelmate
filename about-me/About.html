@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
         <!-- Fontawesome -->
@@ -10,8 +11,8 @@
         crossorigin="anonymous"/>
         <!-- Adobe Fonts -->
         <link rel="stylesheet" href="https://use.typekit.net/ifi5zvx.css">
-        <!-- About CSS -->
-        <link rel="stylesheet" href="/Users/fatimafakih/Travelmate/dashboard/About.css">
+        <!-- Our CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css">
 
         <title>Travlmate | About</title>
 
@@ -19,17 +20,18 @@
 
     <body>
         <div class ="page-container">
-            <!-- <nav class="uk-navbar-container-flex uk-navbar-transparent" uk-navbar>
+           
+            <nav class="uk-navbar-container uk-navbar-transparent uk-visible@s" uk-navbar>
                 <div class="uk-navbar-left">
             
-                    <a class="uk-navbar-item uk-logo" href="#">
+                    <a class="uk-navbar-item uk-logo" href="../index.html">
                         <img src="../assets/images/travlmate-logo-02.png" alt="Travlmate logo" style="width: 200px;"/>
                     </a>
                 </div>
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a href="#">
+                            <a href="../about-me/About.html">
                                 About
                             </a>
                         </li>
@@ -44,51 +46,81 @@
                     </ul>
             
                     <div class="uk-navbar-item">
-                        <form action="javascript:void(0)">
-                            <input class="search-input" type="text" placeholder="">
-                            <button class="search-button"><i class="fas fa-search"></i></button>
+                        <form id="nav-form" method="POST">
+                            <input class="search-input" type="text" placeholder="" id="search-nav">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
             
                 </div>
             </nav>
- -->
-
-            
-
-            <div>
-                <div class="uk-grid uk-grid-width-1-1">
-                    <div class="uk-width-1-2">
-                            <img class="img1" src="/Users/fatimafakih/Travelmate/assets/images/about-01.png">
-                        </div>
-                        <div class="uk-width-1-2">
-                            <img class="img2"src="/Users/fatimafakih/Travelmate/assets/images/about-02.png"> 
-                        </div>
-                    </div>
     
-                    <div class="uk-overlay uk-position-top-center"> 
-                        <div uk-grid class="uk-child-width-expand">
-                        <div class="uk-grid-1-5"></div>
-                        <div class="uk-text-center"> 
-                            
-                        <p> <span class="purple">Water my plants,</span> <br>
-                        <span class="red"><strong>I'm going travelling</strong></span>
-                        </p>
-                        <p class="travelmate">Travelmate is a site designed to help eager travellers understand<br>
-                            a little bit more about destinations they are going to. The site is a quick and easy way to access key <br>
-                            information about a traveller's country of choice including <br>
-                            availability of safe drinking water, currency and rates and neighbouring countries.<br>
-                            Designed as a travellers aid to help with trip planning and organisation, Travlmate is the ideal travel companion<br>
-                            Keep your ideal destinations at reach with our handy bookmark feature!
-                        </p>
+            <!--Mobile nav-->
+            <!--Top-->
+            <div class=" uk-flex uk-flex-center uk-hidden@s">
+                <a class="uk-logo" href="../index.html">
+                    <img src="../assets/images/travlmate-logo-02.png" alt="Travlmate logo" style="width: 150px;"/>
+                </a>
+            </div>
+            <!--Bottom-->
+            <div class="uk-hidden@s">
+                <div class="uk-container-center mobile-nav">
+                    <div class="uk-grid-collapse uk-child-width-expand uk-text-center" uk-grid>
+                        <div class="mob-nav-button">
+                            <a class="white" href="../index.html"><i class="fas fa-home"></i></a>
+                        </div>
+                        <div class="mob-nav-button">
+                            <a href='../about-me/About.html' class="white"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="mob-nav-button no-border">
+                            <div class="white"><i class="fas fa-bookmark"></i></div>
+                        </div>
+                        <div class="mobile-drop" uk-drop="pos: top-right; mode: click">
+                            <ul class="uk-list countries-list">
+                                <li class="countries-placeholder">Bookmark searched countries to add here</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                </div> 
+            </div>              
+    
+                    <div class="about-container"> 
+                        <div class="uk-text-center">     
+                            <h1> <span class="header-intro">Water my plants,</span> <br>
+                            <span class="header-country">I'm going travelling</span>
+                            </h1>
+                            <p class="travelmate">Travelmate is a site designed to help eager travellers understand
+                                a little bit more about destinations they are going to. Here a traveller can easily access key
+                                information about their country of choice including
+                                its currency and rates, neighbouring countries and availability of drinking water.
+                                Designed as an aid to help with trip planning and organisation, Travlmate is the ideal travel companion.
+                                Keep your favourite destinations at reach with our handy bookmark feature!
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="about-img-1 uk-visible@m">
+                        <img src="../assets/images/about-01.svg">
+                    </div>
+                    <div class="about-img-2">
+                        <img src="../assets/images/about-02.svg"> 
+                    </div>
      
-        </div> <!---container-->
         
-        <script src="/Users/fatimafakih/Travelmate/assets/scripts/bookmark.js  "></script>    
+            <!-- UIkit JS -->
+            <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+            <!--Jquery-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+            <!--Moment.js-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        
+            <!-- OUR SCRIPTS -->
+            <script src="..\assets\scripts\travelAPI.js"></script>
+            <!--Bookmark function-->
+            <script src="../assets/scripts/bookmark.js"></script> 
         
     </body>
 

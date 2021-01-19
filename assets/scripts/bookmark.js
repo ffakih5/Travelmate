@@ -4,13 +4,18 @@ var savedCountryClick;
 var currentCountry = $('.header-country').text();
 var countriesListEl = $('.countries-list');
 
-renderSavedCountries();
-
 //display saved list in nav 
 function renderSavedCountries(){
     countriesListEl.html('');
     savedCountries = JSON.parse(localStorage.getItem('bookmarked countries'));
-    if (savedCountries.length > 0) {
+    //console.log(savedCountries);
+
+    if (savedCountries === null) {
+        savedCountries = [];
+        var countriesListPlaceholder = $('<li class="countries-placeholder">');
+        countriesListPlaceholder.text('Bookmark searched countries to add here');
+        countriesListEl.append(countriesListPlaceholder);
+    } else if (savedCountries.length > 0) {
         for(i = 0; i < savedCountries.length; i++){
             savedCountryItem = $('<li class="uk-flex uk-flex-between uk-flex-middle saved-country">');
             savedCountryClick = $('<div class="saved-country-click">'); //adding extra wrapper around the text for event listener
@@ -22,15 +27,10 @@ function renderSavedCountries(){
 
             countriesListEl.append(savedCountryItem);
         } 
-    } else {
-        savedCountries = [];
-        var countriesListPlaceholder = $('<li class="countries-placeholder">');
-        countriesListPlaceholder.text('Bookmark searched countries to add here');
-        countriesListEl.append(countriesListPlaceholder)
-    }
-    
-
+    }  
 }
+
+renderSavedCountries();
 
     // SAVE/UNSAVE COUNTRIES WITH BOOKMARK BUTTON
 $('.bookmark').on('click', function(){ // how to distinguish between saving and deleting...
@@ -69,7 +69,11 @@ $(document.body).on('click', '.saved-country-click', function(){
 $(document.body).on('click', '.fa-trash-alt', function(){
    
     country = $(this).siblings().text();
-    //console.log(country); //checking value
+
+    if (country === $('.header-country').text()) {
+        $('.bookmark').removeClass('far fas');
+        $('.bookmark').addClass('far');
+    }
 
     savedCountries = $.grep(savedCountries, function(value){
         return value !== country;
