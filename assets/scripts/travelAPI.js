@@ -12,14 +12,17 @@ $("#nav-form").on('submit', function () {
     if (country === ''){
         return;
     }
+    var previousCountry = localStorage.getItem('current country');
+    console.log(previousCountry)
     localStorage.setItem('current country', country);
     $('#search-nav').val('');
-    getTravelData();
+    console.log(searchVal);
+    getTravelData(searchVal, previousCountry);
 
 });
 
 
-function getTravelData () {
+function getTravelData (input, previous) {
 
 country = localStorage.getItem('current country');
 
@@ -32,12 +35,12 @@ $.ajax({
 })
 .then(function(responseStr) {
 
-    //if not on dashboard page, navigate to it
-    var pathname = window.location.pathname;
-    //console.log(pathname);  // check pathname
-    if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/Group-Collab/dashboard/index.html'){ //this needs to be changed when deployed
-        window.location.href="dashboard/index.html"; //navigate to dashboard
-    }
+    // //if not on dashboard page, navigate to it
+    // var pathname = window.location.pathname;
+    // //console.log(pathname);  // check pathname
+    // if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/Group-Collab/dashboard/index.html'){ //this needs to be changed when deployed
+    //     window.location.href="dashboard/index.html"; //navigate to dashboard
+    // }
 
     // Turn response string to object
     var response = JSON.parse(responseStr)
@@ -45,8 +48,16 @@ $.ajax({
 
     // BOOKMARK BUTTON LOOK
 
+
     //check if it is saved
     country = response.names.name;
+
+    // Prevent default "Netherlands" response from showing
+    if (input.toLowerCase() !== country.toLowerCase()) {
+        console.log("no")
+        localStorage.setItem('current country', previous);
+        return;
+    }
 
     var checkarray = jQuery.inArray(country, savedCountries);
 
