@@ -73,14 +73,14 @@ We decided that we would need the site to have searchability as well as the abil
 
 ## Mockups
 <b>Mobile Homepage</b></br>
-![MobileHomepage](assets/images/screenshots/Mobile_Homepage.png)
+![MobileHomepage](https://github.com/ffakih5/Travelmate/blob/main/assets/images/Screenshots/Mobile_Homepage.png?raw=true)
 
 
 <b>Mobile Dashboard</b></br>
-![MobileDashboard](assets/images/screenshots/Mobile_Dashboard.png)
+![MobileDashboard](https://github.com/ffakih5/Travelmate/blob/main/assets/images/Screenshots/Mobile_Dashboard.png?raw=true)
 
 <b>Desktop Homepage</b></br>
-![DesktopHomepage](assets/images/screenshots/Desktop_Homepage.png)
+![DesktopHomepage](https://github.com/ffakih5/Travelmate/blob/main/assets/images/Screenshots/Desktop_Homepage.png?raw=true)
 
 
 <b>Desktop Dashboard</b></br>
