@@ -42,15 +42,15 @@ function getTravelData () {
 //if not on dashboard page, navigate to it
 var pathname = window.location.pathname;
 console.log(pathname);  // check pathname
-/*
+
 if(pathname !== '/Travelmate/dashboard/index.html'){ //this needs to be changed when deployed
 window.location.pathname="/Travelmate/dashboard/index.html"; //navigate to dashboard
 }
-*/
+/*
 if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'){ //LOCAL TESTING ONLY
     window.location.assign('/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'); //navigate to dashboard
     }
-
+*/
 country = localStorage.getItem('current country');
 
 //TRAVEL API
