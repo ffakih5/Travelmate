@@ -72,13 +72,22 @@
                         <div class="mob-nav-button">
                             <a href='../about-me/About.html' class="white"><i class="fas fa-info-circle"></i></a>
                         </div>
-                        <div class="mob-nav-button no-border">
+                        <div class="mob-nav-button">
                             <div class="white"><i class="fas fa-bookmark"></i></div>
                         </div>
-                        <div class="mobile-drop" uk-drop="pos: top-right; mode: click">
+                        <div class="mobile-drop" uk-drop="mode: click; boundary: .mobile-nav; boundary-align: true">
                             <ul class="uk-list countries-list">
                                 <li class="countries-placeholder">Bookmark searched countries to add here</li>
                             </ul>
+                        </div>
+                        <div class="mob-nav-button no-border">
+                            <div class="white"><i class="fas fa-search"></i></div>
+                        </div>
+                        <div class="mobile-drop" uk-drop="pos: top-right; mode: click">
+                            <form id="mob-nav-form" method="POST">
+                                <input class="mob-search-input" type="text" placeholder="" id="mob-search-nav">
+                                <button type="submit" class="mob-search-button"><i class="fas fa-search"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -87,7 +96,7 @@
                     <div class="about-container"> 
                         <div class="uk-text-center">     
                             <h1> <span class="header-intro">Water my plants,</span> <br>
-                            <span class="header-country">I'm going travelling</span>
+                            <span class="header-red">I'm going travelling</span>
                             </h1>
                             <p class="travelmate">Travelmate is a site designed to help eager travellers understand
                                 a little bit more about destinations they are going to. The site is a quick and easy way to access key

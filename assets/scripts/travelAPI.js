@@ -20,8 +20,36 @@ $("#nav-form").on('submit', function () {
 
 });
 
+$("#mob-nav-form").on('submit', function () {
+    event.preventDefault();
+    currencyCode = '';
+    var searchVal = $('#mob-search-nav').val();
+    country = searchVal.trim();
+    country = country.toLowerCase();
+    // exit function if input is empty
+    if (country === ''){
+        return;
+    }
+    localStorage.setItem('current country', country);
+    $('#mob-search-nav').val('');
+    getTravelData();
+
+});
+
 
 function getTravelData () {
+
+//if not on dashboard page, navigate to it
+var pathname = window.location.pathname;
+console.log(pathname);  // check pathname
+/*
+if(pathname !== '/Travelmate/dashboard/index.html'){ //this needs to be changed when deployed
+window.location.pathname="/Travelmate/dashboard/index.html"; //navigate to dashboard
+}
+*/
+if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'){ //LOCAL TESTING ONLY
+    window.location.assign('/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'); //navigate to dashboard
+    }
 
 country = localStorage.getItem('current country');
 
@@ -33,13 +61,6 @@ $.ajax({
     method: "GET"
 })
 .then(function(responseStr) {
-
-    //if not on dashboard page, navigate to it
-    var pathname = window.location.pathname;
-    console.log(pathname);  // check pathname
-    if(pathname !== '/Travelmate/dashboard/index.html'){ //this needs to be changed when deployed
-        window.location.pathname="/Travelmate/dashboard/index.html"; //navigate to dashboard
-    }
 
     // Turn response string to object
     var response = JSON.parse(responseStr)
@@ -64,7 +85,7 @@ $.ajax({
 
 
     // HEADER COUNTRY
-    $(".header-country").text(response.names.name);
+    $("#header-country").text(response.names.name);
     // moved language and calling code to other api due to some small countries not having this value
 
     // TRAVEL ADVICE CARD

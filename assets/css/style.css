@@ -11,7 +11,7 @@ body {
 
 h1 {
     font-family: Termina,sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-style: normal; 
     font-weight: 500;
 }
@@ -149,7 +149,7 @@ p {
     color: #A55591;
 }
 
-.header-country {
+.header-red {
     color: #F05058;
     font-weight: 800;
 }
@@ -405,6 +405,24 @@ p {
 .mobile-drop {
     background-color: #773c68;
     padding: 20px;
+}
+
+.mob-search-input {
+    background: none;
+    border: none;
+    border-bottom: solid #ffffff;
+    font-family: Termina, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.mob-search-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
 }
 
 /* ABOUT PAGE */

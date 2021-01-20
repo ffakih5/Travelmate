@@ -76,13 +76,22 @@
                     <div class="mob-nav-button">
                         <a href='../about-me/About.html' class="white"><i class="fas fa-info-circle"></i></a>
                     </div>
-                    <div class="mob-nav-button no-border">
+                    <div class="mob-nav-button">
                         <div class="white"><i class="fas fa-bookmark"></i></div>
                     </div>
-                    <div class="mobile-drop" uk-drop="pos: top-right; mode: click">
+                    <div class="mobile-drop" uk-drop="mode: click; boundary: .mobile-nav; boundary-align: true">
                         <ul class="uk-list countries-list">
                             <li class="countries-placeholder">Bookmark searched countries to add here</li>
                         </ul>
+                    </div>
+                    <div class="mob-nav-button no-border">
+                        <div class="white"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="mobile-drop" uk-drop="pos: top-right; mode: click">
+                        <form id="mob-nav-form" method="POST">
+                            <input class="mob-search-input" type="text" placeholder="" id="mob-search-nav">
+                            <button type="submit" class="mob-search-button"><i class="fas fa-search"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -91,7 +100,7 @@
 
         <div class="page-container">
             <div class="header uk-flex uk-flex-center uk-flex-top">
-                <h1><span class="header-intro">So you want to go to </span> <span class="header-country"></span><i class="far fa-bookmark bookmark"></i></h1> 
+                <h1><span class="header-intro">So you want to go to </span> <span class="header-red" id="header-country"></span><i class="far fa-bookmark bookmark"></i></h1> 
             </div> <!--header-->
 
             <div class="uk-container-center">
@@ -125,7 +134,7 @@
                     
                     <div class="uk-container-center cards-container">
 
-                        <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
                             <div class="">
                             <div class="card currency-card">
                                 <h2>currency</h2>
@@ -270,7 +279,7 @@
     <!--Currency Script-->
     <script src="../assets/scripts/converter.js"></script>
     <!--TRAVEL API-->
-    <script src="..\assets\scripts\travelAPI.js"></script>
+    <script src="../assets/scripts/travelAPI.js"></script>
     <!--Bookmark function-->
     <script src="../assets/scripts/bookmark.js"></script>
     <!--Dashboard only functions-->
