@@ -108,7 +108,7 @@ We decided that we would need the site to have searchability as well as the abil
 
 ## Functionality </br>
 <a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate </a><br>
-![TravlMate GIF](https)
+![TravlMate GIF](https://media.giphy.com/media/Pl8Mj1FI477DKdaJwg/giphy.gif)
 
 ## Credits
 The search icon, bookmark icon and trash icon are from https://fontawesome.com/<br>
