@@ -2,55 +2,33 @@ console.log('connected');
 
 var country;
 var currencyCode;
-// NAV SEARCH EVENT
-// Changed search button click to form submit
-$("#nav-form").on('submit', function () {
-    event.preventDefault();
-    currencyCode = '';
-    var searchVal = $('#search-nav').val();
-    country = searchVal.trim();
-    country = country.toLowerCase();
-    // exit function if input is empty
-    if (country === ''){
-        return;
+
+// NAVIGATING TO DASHBOARD
+function goToDashboard(){
+    //if not on dashboard page, navigate to it
+    var pathname = window.location.pathname;
+    console.log(pathname);  // check pathname
+    
+    /* if(pathname !== '/Travelmate/dashboard/index.html'){ 
+        window.location.pathname="/Travelmate/dashboard/index.html"; //navigate to dashboard
+    } 
+    
+    if(pathname === '/Travelmate/dashboard/index.html'){ 
+        location.reload(); //RELOAD DASHBOARD TO STOP INTERVAL
     }
-    localStorage.setItem('current country', country);
-    $('#search-nav').val('');
-    getTravelData();
-
-});
-
-$("#mob-nav-form").on('submit', function () {
-    event.preventDefault();
-    currencyCode = '';
-    var searchVal = $('#mob-search-nav').val();
-    country = searchVal.trim();
-    country = country.toLowerCase();
-    // exit function if input is empty
-    if (country === ''){
-        return;
+    */
+    
+    if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'){ //LOCAL TESTING ONLY
+        window.location.assign('/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'); //navigate to dashboard
     }
-    localStorage.setItem('current country', country);
-    $('#mob-search-nav').val('');
-    getTravelData();
-
-});
-
-
-function getTravelData () {
-
-//if not on dashboard page, navigate to it
-var pathname = window.location.pathname;
-console.log(pathname);  // check pathname
-
-if(pathname !== '/Travelmate/dashboard/index.html'){ //this needs to be changed when deployed
-window.location.pathname="/Travelmate/dashboard/index.html"; //navigate to dashboard
+    
+    if(pathname === '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'){ //LOCAL TESTING ONLY
+        location.reload(); //RELOAD DASHBOARD TO STOP INTERVAL
+    }
 }
-/*
-if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'){ //LOCAL TESTING ONLY
-    window.location.assign('/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'); //navigate to dashboard
-    }
-*/
+
+function getTravelData () { 
+
 country = localStorage.getItem('current country');
 
 //TRAVEL API
@@ -128,6 +106,7 @@ $.ajax({
     currencyCode = response.currency.code;
     $('#result-code').text(currencyCode);
     $("#currency-input").val('');
+    currencyConvert();
 
     // NEIGHBOURS CARD
     $('#neighbours-list').html('');
@@ -198,10 +177,46 @@ $.ajax({
 
 };
 
+// NAV SEARCH EVENT
+// Changed search button click to form submit
+$("#nav-form").on('submit', function () {
+    event.preventDefault();
+    currencyCode = '';
+    var searchVal = $('#search-nav').val();
+    country = searchVal.trim();
+    country = country.toLowerCase();
+    // exit function if input is empty
+    if (country === ''){
+        return;
+    }
+    localStorage.setItem('current country', country);
+    $('#search-nav').val('');
+    goToDashboard();
+    getTravelData();
+
+});
+
+// mob search form event
+$("#mob-nav-form").on('submit', function () {
+    event.preventDefault();
+    currencyCode = '';
+    var searchVal = $('#mob-search-nav').val();
+    country = searchVal.trim();
+    country = country.toLowerCase();
+    // exit function if input is empty
+    if (country === ''){
+        return;
+    }
+    localStorage.setItem('current country', country);
+    $('#mob-search-nav').val('');
+    goToDashboard();
+    getTravelData();
+
+});
+
 // currency form event listener
 $('#currency-form').on('submit', function(){
     event.preventDefault();
-    currencyConvert();
 });
 
 //neighbours event listener - OK
@@ -209,6 +224,7 @@ $('#currency-form').on('submit', function(){
 $(document.body).on('click', '.neighbour-country', function(){
     country = $(this).text();
     localStorage.setItem('current country', country);
+    goToDashboard();
     getTravelData();
 });
 
