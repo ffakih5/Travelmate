@@ -87,7 +87,7 @@ _THEN I am presented with the average weather and the button changes to red_
 
 _WHEN I click the bookmark icon_
 
-_THEN I can add my searches to the “my countries list”__
+_THEN I can add my searches to the “my countries list”_
 
 _WHEN I VIEW my countries_
 
@@ -117,8 +117,6 @@ We decided that we would need the site to have searchability as well as the abil
 ![DesktopHomepage](assets/images/Screenshots/Desktop_Homepage.png)
 
 
-Desktop Dashboard
-
 ## Built with
 - [UI Kit](https://getbootstrap.com/)
 - [JQuery](https://jquery.com/)
@@ -142,8 +140,9 @@ Desktop Dashboard
 
 
 ## Functionality 
-<b>See deployed link here:</b><br>
-<h3><a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate Site</a></h3>
+<b>See deployed link here:</b>
+
+<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate</a>
 
 ![TravlMate GIF](https://media.giphy.com/media/Pl8Mj1FI477DKdaJwg/giphy.gif)
 
