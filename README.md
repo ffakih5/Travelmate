@@ -148,7 +148,9 @@ We decided that we would need the site to have searchability as well as the abil
 
 <b>See deployed link here:</b>
 
-<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate</a>
+<h3><a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate Site</a></h3>
+
+![Travlmate Gif](assets/images/Screenshots/travlmateDemo.gif)
 
 
 ## Credits
