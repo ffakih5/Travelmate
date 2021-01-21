@@ -149,7 +149,7 @@ Desktop Dashboard
 ## Functionality
 
 <a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate </a><br>
-![TravlMate GIF](https)
+![TravlMate GIF](assets/images/Screenshots/travlmateDemo.gif)
 
 ## Credits
 All icons credited to https://fontawesome.com/
