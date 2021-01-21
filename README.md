@@ -6,7 +6,7 @@ The benefit of the site is that it is a one-stop-shop for information. It saves 
 <i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  Travlmate. </i></b>
 
 
-<b> Click the on the aeroplance below and prepare for TAKE OFF... Well a trip to view Travlmate </b>
+<b> Click the on the aeroplane below and prepare for TAKE OFF... Well a trip to view Travlmate </b>
 
 <a href="https://ffakih5.github.io/Travelmate/"> ✈️</a>
 
@@ -99,7 +99,7 @@ _THEN I am presented with the last searched country_
 
 
 ## Process
-We began with concept creation centered around our Travel Briefing API. We knew we wanted an information hub for travellers, that would present a consolidated source of key travel insights for any country to make it easy to plan a trip or write a blog. 
+We began with oncept creation which then centered around our Travel Briefing API. We knew we wanted an information hub for travellers, that would present a consolidated source of key travel insights for any country to make it easy to plan a trip or write a blog. 
 
 We then came to the conclusion that the second API would be a currency converter as this was something we thought was missing from the Travel Brieifng API but important to our intended users.
 
@@ -110,11 +110,25 @@ We decided that we would need the site to have searchability as well as the abil
 <b>Mobile Homepage</b></br>
 ![MobileHomepage](https://github.com/ffakih5/Travelmate/blob/suzie-test/assets/images/Screenshots/MobileHomepage.png?raw=true)
 
+<<<<<<< HEAD
+![MobileHomepage](ssets/images/Screenshots/Mobile_Homepage.png)
+
+
+Mobile Dashboard
+
+![MobileDashboard](assets/images/Screenshots/Mobile_Dashboard.png)
+
+
+Desktop Homepage
+
+![DesktopHomepage](assets/images/Screenshots/Mobile_Homepage.png)
+=======
 <b>Mobile Dashboard</b></br>
 ![MobileDashboard](https://github.com/ffakih5/Travelmate/blob/suzie-test/assets/images/Screenshots/MobileDashboard.png?raw=true)
 
 <b>Desktop Homepage</b></br>
 ![DesktopHomepage](https://github.com/ffakih5/Travelmate/blob/main/assets/images/Screenshots/Desktop_Homepage.png?raw=true)
+>>>>>>> 7451c3b7f53a130e466658416ac9300ecc69f257
 
 
 Desktop Dashboard
@@ -145,7 +159,12 @@ Desktop Dashboard
 <b>See deployed link here:</b><br>
 <h3><a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate Site</a></h3>
 
+<<<<<<< HEAD
+<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate </a><br>
+![TravlMate GIF](assets/images/Screenshots/travlmateDemo.gif)
+=======
 ![TravlMate GIF](https://media.giphy.com/media/Pl8Mj1FI477DKdaJwg/giphy.gif)
+>>>>>>> 7451c3b7f53a130e466658416ac9300ecc69f257
 
 ## Credits
 All icons credited to https://fontawesome.com/
