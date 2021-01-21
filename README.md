@@ -109,17 +109,17 @@ We decided that we would need the site to have searchability as well as the abil
 ## Mockups
 Mobile Homepage
 
-![MobileHomepage](assets/images/screenshots/Mobile_Homepage.png)
+![MobileHomepage](ssets/images/Screenshots/Mobile_Homepage.png)
 
 
 Mobile Dashboard
 
-![MobileDashboard](assets/images/screenshots/Mobile_Dashboard.png)
+![MobileDashboard](assets/images/Screenshots/Mobile_Dashboard.png)
 
 
 Desktop Homepage
 
-![DesktopHomepage](assets/images/screenshots/Desktop_Homepage.png)
+![DesktopHomepage](assets/images/Screenshots/Mobile_Homepage.png)
 
 
 Desktop Dashboard
