@@ -1,7 +1,7 @@
 //BOOKMARK FUNCTIONALITY
 var savedCountries;
 var savedCountryClick;
-var currentCountry = $('.header-country').text();
+var currentCountry = $('#header-country').text();
 var countriesListEl = $('.countries-list');
 
 //display saved list in nav 
@@ -70,7 +70,7 @@ $(document.body).on('click', '.fa-trash-alt', function(){
    
     country = $(this).siblings().text();
 
-    if (country === $('.header-country').text()) {
+    if (country === $('#header-country').text()) {
         $('.bookmark').removeClass('far fas');
         $('.bookmark').addClass('far');
     }
