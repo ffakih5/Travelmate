@@ -3,7 +3,7 @@ TravlMate is a website for travel enthusiasts and bloggers to access helpful inf
 
 The benefit of the site is that it is a one-stop-shop for information. It saves users time and effort having to search across many sites for a variety of information they might need. Instead, TravlMate is an easy to use service that instantly collates valuable facts in one place, including currency, water safety, neighbouring countries and much more.
 
-<i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  TravlMate. </i></b>
+<i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  Travlmate. </i></b>
 
 
 <br> <b>See Deployed Application Link: </b>
@@ -42,9 +42,7 @@ _WHEN I view the overview for that country_
 
 _THEN I am presented with the Capital city, spoken languages and country code_
 
-_WHEN I view the currency for that country_
-
-_THEN I am presented with a list of the top 10 currencies used in the world/exchanged_
+_WHEN I view the currency for that country_ 
 
 _WHEN I input an amount of AUD to exchange_
 
@@ -88,7 +86,7 @@ _THEN I am presented with the average weather and the button changes to red_
 
 _WHEN I click the bookmark icon_
 
-_THEN I am can add my searches to the “my countries list”__
+_THEN I can add my searches to the “my countries list”__
 
 _WHEN I VIEW my countries_
 
@@ -153,5 +151,6 @@ Desktop Dashboard
 ![TravlMate GIF](https)
 
 ## Credits
-The search, bookmark and trash icon are from https://fontawesome.com/<br>
+All icons credited to https://fontawesome.com/
+
 Images credited to https://blush.design/
