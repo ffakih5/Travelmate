@@ -10,7 +10,7 @@ function renderSavedCountries(){
     savedCountries = JSON.parse(localStorage.getItem('bookmarked countries'));
     //console.log(savedCountries);
 
-    if (savedCountries === null) {
+    if (savedCountries === null || savedCountries.length === 0) {
         savedCountries = [];
         var countriesListPlaceholder = $('<li class="countries-placeholder">');
         countriesListPlaceholder.text('Bookmark searched countries to add here');
@@ -35,8 +35,7 @@ renderSavedCountries();
     // SAVE/UNSAVE COUNTRIES WITH BOOKMARK BUTTON
 $('.bookmark').on('click', function(){ // how to distinguish between saving and deleting...
 
-    country = $('.header-country').text();
-
+    country = $('#header-country').text();
     var checkarray = jQuery.inArray(country, savedCountries);
 
     if (checkarray > -1) { //IF ALREADY SAVED
@@ -61,6 +60,7 @@ $('.bookmark').on('click', function(){ // how to distinguish between saving and 
 $(document.body).on('click', '.saved-country-click', function(){
     country = $(this).text();
     localStorage.setItem('current country', country);
+    goToDashboard();
     getTravelData();
 });
 

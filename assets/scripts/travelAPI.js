@@ -1,28 +1,33 @@
 console.log('connected');
 
 var country;
-// NAV SEARCH EVENT
-// Changed search button click to form submit
-$("#nav-form").on('submit', function () {
-    event.preventDefault();
-    var searchVal = $('#search-nav').val();
-    country = searchVal.trim();
-    country = country.toLowerCase();
-    // exit function if input is empty
-    if (country === ''){
-        return;
+var currencyCode;
+
+// NAVIGATING TO DASHBOARD
+function goToDashboard(){
+    //if not on dashboard page, navigate to it
+    var pathname = window.location.pathname;
+    console.log(pathname);  // check pathname
+    
+    if(pathname !== '/Travelmate/dashboard/index.html'){ 
+        window.location.pathname="/Travelmate/dashboard/index.html"; //navigate to dashboard
+    } 
+    
+    if(pathname === '/Travelmate/dashboard/index.html'){ 
+        location.reload(); //RELOAD DASHBOARD TO STOP INTERVAL
     }
-    var previousCountry = localStorage.getItem('current country');
-    console.log(previousCountry)
-    localStorage.setItem('current country', country);
-    $('#search-nav').val('');
-    console.log(searchVal);
-    getTravelData(searchVal, previousCountry);
 
-});
+    
+    /*if(pathname !== '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'){ //LOCAL TESTING ONLY
+        window.location.assign('/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'); //navigate to dashboard
+    }
+    
+    if(pathname === '/Users/ferwicker/Documents/BOOTCAMP/PROJECT-1/TravelMate/dashboard/index.html'){ //LOCAL TESTING ONLY
+        location.reload(); //RELOAD DASHBOARD TO STOP INTERVAL
+    } */
+}
 
-
-function getTravelData (input, previous) {
+function getTravelData () { 
 
 country = localStorage.getItem('current country');
 
@@ -35,28 +40,14 @@ $.ajax({
 })
 .then(function(responseStr) {
 
-    //if not on dashboard page, navigate to it
-    var pathname = window.location.pathname;
-    //console.log(pathname);  // check pathname
-    if(pathname !== '/Travelmate/dashboard/index.html'){ //this needs to be changed when deployed
-        window.location.pathname="/Travelmate/dashboard/index.html"; //navigate to dashboard
-    }
-
     // Turn response string to object
     var response = JSON.parse(responseStr)
     console.log(response)
 
     // BOOKMARK BUTTON LOOK
 
-
     //check if it is saved
     country = response.names.name;
-
-    // Prevent default "Netherlands" response from showing
-    if (input.toLowerCase() !== country.toLowerCase()) {
-        localStorage.setItem('current country', previous);
-        return;
-    }
 
     var checkarray = jQuery.inArray(country, savedCountries);
 
@@ -72,7 +63,7 @@ $.ajax({
 
 
     // HEADER COUNTRY
-    $(".header-country").text(response.names.name);
+    $("#header-country").text(response.names.name);
     // moved language and calling code to other api due to some small countries not having this value
 
     // TRAVEL ADVICE CARD
@@ -107,10 +98,17 @@ $.ajax({
         $('#water-icon').addClass('fa-question');
     }
 
+    // CURRENCY CARD
     $('#currency-country').text(response.names.name);
     $('#currency-text').text(response.currency.name);
+    $('#currency-name').text(response.currency.name);
+    $('#convert-result').text('');
+    currencyCode = response.currency.code;
+    $('#result-code').text(currencyCode);
+    $("#currency-input").val('');
+    currencyConvert();
 
-    // Add Neighbours
+    // NEIGHBOURS CARD
     $('#neighbours-list').html('');
     for(i = 0; i < 3; i++) {
         var neighbourItem = $('<li class="neighbour-country">');
@@ -140,9 +138,6 @@ $.ajax({
         temp = parseInt(temp).toFixed(1);
         $('#temperature-current').text(temp + '°C');
     });
-
-
-
 
         // SECOND API to get capital city, region, languages, calling codes (inside travelAPI to solve country name issue)
         var countryName = response.names.name; // full country name for search only
@@ -182,11 +177,54 @@ $.ajax({
 
 };
 
+// NAV SEARCH EVENT
+// Changed search button click to form submit
+$("#nav-form").on('submit', function () {
+    event.preventDefault();
+    currencyCode = '';
+    var searchVal = $('#search-nav').val();
+    country = searchVal.trim();
+    country = country.toLowerCase();
+    // exit function if input is empty
+    if (country === ''){
+        return;
+    }
+    localStorage.setItem('current country', country);
+    $('#search-nav').val('');
+    goToDashboard();
+    getTravelData();
+
+});
+
+// mob search form event
+$("#mob-nav-form").on('submit', function () {
+    event.preventDefault();
+    currencyCode = '';
+    var searchVal = $('#mob-search-nav').val();
+    country = searchVal.trim();
+    country = country.toLowerCase();
+    // exit function if input is empty
+    if (country === ''){
+        return;
+    }
+    localStorage.setItem('current country', country);
+    $('#mob-search-nav').val('');
+    goToDashboard();
+    getTravelData();
+
+});
+
+// currency form event listener
+$('#currency-form').on('submit', function(){
+    event.preventDefault();
+});
+
 //neighbours event listener - OK
 
 $(document.body).on('click', '.neighbour-country', function(){
     country = $(this).text();
     localStorage.setItem('current country', country);
+    goToDashboard();
     getTravelData();
 });
 
