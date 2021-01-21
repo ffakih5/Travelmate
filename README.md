@@ -99,7 +99,7 @@ _THEN I am presented with the last searched country_
 
 
 ## Process
-We began with concept creation centered around our Travel Briefing API. We knew we wanted an information hub for travellers, that would present a consolidated source of key travel insights for any country to make it easy to plan a trip or write a blog. 
+We began with oncept creation which then centered around our Travel Briefing API. We knew we wanted an information hub for travellers, that would present a consolidated source of key travel insights for any country to make it easy to plan a trip or write a blog. 
 
 We then came to the conclusion that the second API would be a currency converter as this was something we thought was missing from the Travel Brieifng API but important to our intended users.
 
