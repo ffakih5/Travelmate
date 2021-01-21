@@ -1,11 +1,14 @@
-# TravlMate
-TravlMate is a website for travel enthusiasts and bloggers to access helpful information that can aid planning for a trip or research for an article or post.<br>
-The benefit of the site is that it is a one-stop-shop for information. It saves users time and effort having to search across many sites for a variety of information they might need. Instead, TravlMate is an easy to use service that instantly collates valuable facts in one place, including currency, water safety, neighbouring countries and much more.<br>
-<i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  TravlMate. </i></b>
+# Travlmate
+TravlMate is a website for travel enthusiasts and bloggers to access helpful information that can aid planning for a trip or research for an article or post.
+
+The benefit of the site is that it is a one-stop-shop for information. It saves users time and effort having to search across many sites for a variety of information they might need. Instead, TravlMate is an easy to use service that instantly collates valuable facts in one place, including currency, water safety, neighbouring countries and much more.
+
+<i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  Travlmate. </i></b>
 
 
-<br> <b>See Deployed Application Link: </b>
-<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate </a>
+<b> Click the on the aeroplance below and prepare for TAKE OFF... Well a trip to view Travlmate </b>
+
+<a href="https://ffakih5.github.io/Travelmate/"> ✈️</a>
 
 ## Table of contents
   - [Motivation](#motivation)
@@ -22,45 +25,77 @@ The motivation behind this project stemmed from the shared yearning to pack up a
 We drew on our personal experiences with travel and brought to light what we consider to be the key elements to ensuring you have a successful trip, wherever your destination may be!
 
 ## User Story
-AS A traveller/ blogger <br>
-I WANT to access a dashboard with useful information about the country I intend to visit/share about. <br>
-SO THAT I plan my trip accordingly. <br>
+AS A traveller/ blogger 
+
+I WANT to access a dashboard with useful information about the country I intend to visit/share about.
+
+SO THAT I plan my trip accordingly.
+
 
 ## Acceptance Criteria
-<i>GIVEN a travel dashboard with form inputs 
+_GIVEN a travel dashboard with form inputs_
 
-WHEN I search for a country 
-<br>THEN I am presented with an overview, currency, neighbours, travel advice, water quality and monthly average weather for that country<br>
-WHEN I view the overview for that country<br>
-THEN I am presented with the Capital city, spoken languages and country code<br>
-WHEN I view the currency for that country
-THEN I am presented with a list of the top 10 currencies used in the world/exchanged.<br>
-WHEN I input an amount of AUD to exchange<br>
-THEN I am presented with the amount in the currency for that country <br>
-WHEN I click on the currency dropdown<br>
-THEN I am presented with a list of optional currencies to exchange<br>
-WHEN I view the neighbours for that country <br>
-THEN I am presented with a list of countries<br>
-WHEN I click on a neighbouring country<br>
-THEN I can view the information for that country and bookmark it <br>
-WHEN I view the travel advice for that country <br>
-THEN I am presented with the type of precautions to exercise <br>
-WHEN I click on the “see more” link in the travel advice <br>
-THEN I am presented with the official travel advice page in separate browser window<br>
-WHEN I view the water for that country <br>
-THEN I am presented with a water-drop icon and “safe” prompting it is safe to drink tap water<br>
-WHEN I view the water for that country <br>
-THEN I am presented with a water-drop icon with a strike-through it and “not safe” prompting it is only safe to drink bottled water or unknown if the status is unknown<br>
-WHEN I view the weather for that country <br>
-THEN I am presented with the average weather for the current month and the button for current month changes to red<br>
-WHEN I click on the month buttons in the weather <br>
-THEN I am presented with the average weather and the button changes to red <br>
-WHEN I click the bookmark icon <br>
-THEN I am can add my searches to the “my countries list”<br>
-WHEN I VIEW my countries <br>
-THEN I am presented with a list of bookmarked Countries <br>
-WHEN I open the travel dashboard <br>
-THEN I am presented with the last searched country</i>
+_WHEN I search for a country_
+
+_THEN I am presented with an overview, currency, neighbours, travel advice, water quality and monthly average weather for that country_
+
+_WHEN I view the overview for that country_
+
+_THEN I am presented with the Capital city, spoken languages and country code_
+
+_WHEN I view the currency for that country_ 
+
+_WHEN I input an amount of AUD to exchange_
+
+_THEN I am presented with the amount in the currency for that country_ 
+
+_WHEN I click on the currency dropdown_
+
+_THEN I am presented with a list of optional currencies to exchange_
+
+_WHEN I view the neighbours for that country_ 
+
+_THEN I am presented with a list of countries_
+
+_WHEN I click on a neighbouring country_
+
+_THEN I can view the information for that country and bookmark it_
+
+_WHEN I view the travel advice for that country_
+
+_THEN I am presented with the type of precautions to exercise_
+
+_WHEN I click on the “see more” link in the travel advice_
+
+_THEN I am presented with the official travel advice page in separate browser window_
+
+_WHEN I view the water for that country_
+
+_THEN I am presented with a water-drop icon and “safe” prompting it is safe to drink tap water_
+
+_WHEN I view the water for that country_
+
+_THEN I am presented with a water-drop icon with a strike-through it and “not safe”_
+
+_WHEN I view the weather for that country_ 
+
+_THEN I am presented with the average weather for the current month and the button for current month changes to red_
+
+_WHEN I click on the month buttons in the weather_
+
+_THEN I am presented with the average weather and the button changes to red_
+
+_WHEN I click the bookmark icon_
+
+_THEN I can add my searches to the “my countries list”__
+
+_WHEN I VIEW my countries_
+
+_THEN I am presented with a list of bookmarked Countries_
+
+_WHEN I open the travel dashboard_
+
+_THEN I am presented with the last searched country_
 
 
 ## Process
@@ -72,18 +107,22 @@ We decided that we would need the site to have searchability as well as the abil
 
 
 ## Mockups
-<b>Mobile Homepage</b></br>
+Mobile Homepage
+
 ![MobileHomepage](assets/images/screenshots/Mobile_Homepage.png)
 
 
-<b>Mobile Dashboard</b></br>
+Mobile Dashboard
+
 ![MobileDashboard](assets/images/screenshots/Mobile_Dashboard.png)
 
-<b>Desktop Homepage</b></br>
+
+Desktop Homepage
+
 ![DesktopHomepage](assets/images/screenshots/Desktop_Homepage.png)
 
 
-<b>Desktop Dashboard</b></br>
+Desktop Dashboard
 
 ## Built with
 - [UI Kit](https://getbootstrap.com/)
@@ -99,7 +138,7 @@ We decided that we would need the site to have searchability as well as the abil
 - Automatically save search history 
 - Bookmark countries to view later
 - Display key information on a dashboard
-- Convery currency to your chosen currency using current rates
+- Convert currency to your chosen currency using current rates
 - Display currency rates for the 10 most traded currencies
 - About section to inform users of the purpose of the site
 - Links to neighbouring countries to view or bookmark for later
@@ -107,10 +146,12 @@ We decided that we would need the site to have searchability as well as the abil
 - Mobile Responsive site
 
 
-## Functionality </br>
-<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate </a><br>
+## Functionality
+
+<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate </a><br>
 ![TravlMate GIF](https)
 
 ## Credits
-The search icon, bookmark icon and trash icon are from https://fontawesome.com/<br>
-The images are from https://blush.design/
+All icons credited to https://fontawesome.com/
+
+Images credited to https://blush.design/
