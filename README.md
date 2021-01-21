@@ -1,6 +1,8 @@
 # TravlMate
-TravlMate is a website for travel enthusiasts and bloggers to access helpful information that can aid planning for a trip or research for an article or post.<br>
-The benefit of the site is that it is a one-stop-shop for information. It saves users time and effort having to search across many sites for a variety of information they might need. Instead, TravlMate is an easy to use service that instantly collates valuable facts in one place, including currency, water safety, neighbouring countries and much more.<br>
+TravlMate is a website for travel enthusiasts and bloggers to access helpful information that can aid planning for a trip or research for an article or post.
+
+The benefit of the site is that it is a one-stop-shop for information. It saves users time and effort having to search across many sites for a variety of information they might need. Instead, TravlMate is an easy to use service that instantly collates valuable facts in one place, including currency, water safety, neighbouring countries and much more.
+
 <i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  TravlMate. </i></b>
 
 
@@ -22,21 +24,32 @@ The motivation behind this project stemmed from the shared yearning to pack up a
 We drew on our personal experiences with travel and brought to light what we consider to be the key elements to ensuring you have a successful trip, wherever your destination may be!
 
 ## User Story
-AS A traveller/ blogger <br>
-I WANT to access a dashboard with useful information about the country I intend to visit/share about. <br>
-SO THAT I plan my trip accordingly. <br>
+AS A traveller/ blogger 
+
+I WANT to access a dashboard with useful information about the country I intend to visit/share about.
+
+SO THAT I plan my trip accordingly.
+
 
 ## Acceptance Criteria
 <i>GIVEN a travel dashboard with form inputs 
 
 WHEN I search for a country 
-<br>THEN I am presented with an overview, currency, neighbours, travel advice, water quality and monthly average weather for that country<br>
+
+THEN I am presented with an overview, currency, neighbours, travel advice, water quality and monthly average weather for that country
+
 WHEN I view the overview for that country<br>
+
 THEN I am presented with the Capital city, spoken languages and country code<br>
+
 WHEN I view the currency for that country
+
 THEN I am presented with a list of the top 10 currencies used in the world/exchanged.<br>
+
 WHEN I input an amount of AUD to exchange<br>
+
 THEN I am presented with the amount in the currency for that country <br>
+
 WHEN I click on the currency dropdown<br>
 THEN I am presented with a list of optional currencies to exchange<br>
 WHEN I view the neighbours for that country <br>
@@ -99,7 +112,7 @@ We decided that we would need the site to have searchability as well as the abil
 - Automatically save search history 
 - Bookmark countries to view later
 - Display key information on a dashboard
-- Convery currency to your chosen currency using current rates
+- Convert currency to your chosen currency using current rates
 - Display currency rates for the 10 most traded currencies
 - About section to inform users of the purpose of the site
 - Links to neighbouring countries to view or bookmark for later
@@ -112,5 +125,5 @@ We decided that we would need the site to have searchability as well as the abil
 ![TravlMate GIF](https)
 
 ## Credits
-The search icon, bookmark icon and trash icon are from https://fontawesome.com/<br>
-The images are from https://blush.design/
+The search, bookmark and trash icon are from https://fontawesome.com/<br>
+Images credited to https://blush.design/
