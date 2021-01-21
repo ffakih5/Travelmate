@@ -123,7 +123,7 @@ We decided that we would need the site to have searchability as well as the abil
 - [Moment.js](https://momentjs.com/)
 - [Adobe XD](https://www.adobe.com/au/products/xd.html) (prototyping)
 - [Travel Briefing API](https://travelbriefing.org/api) to pull country information
-- [Exchange Rate API](https://ratesapi.io/) to convert currenices
+- [Free Currency Converter API ](https://free.currencyconverterapi.com/) to convert currenices
 - [Rest Countries API](https://restcountries.eu/) to display capital cities, regions and languages
 
 ## Features
