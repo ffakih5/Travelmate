@@ -6,7 +6,7 @@ The benefit of the site is that it is a one-stop-shop for information. It saves 
 <i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  Travlmate. </i></b>
 
 
-<b> Click the on the aeroplance below and prepare for TAKE OFF... Well a trip to view Travlmate </b>
+<b> Click the on the aeroplane below and prepare for TAKE OFF... Well a trip to view Travlmate </b>
 
 <a href="https://ffakih5.github.io/Travelmate/"> ✈️</a>
 
@@ -99,7 +99,7 @@ _THEN I am presented with the last searched country_
 
 
 ## Process
-We began with concept creation centered around our Travel Briefing API. We knew we wanted an information hub for travellers, that would present a consolidated source of key travel insights for any country to make it easy to plan a trip or write a blog. 
+We began with oncept creation which then centered around our Travel Briefing API. We knew we wanted an information hub for travellers, that would present a consolidated source of key travel insights for any country to make it easy to plan a trip or write a blog. 
 
 We then came to the conclusion that the second API would be a currency converter as this was something we thought was missing from the Travel Brieifng API but important to our intended users.
 
@@ -109,17 +109,17 @@ We decided that we would need the site to have searchability as well as the abil
 ## Mockups
 Mobile Homepage
 
-![MobileHomepage](assets/images/screenshots/Mobile_Homepage.png)
+![MobileHomepage](ssets/images/Screenshots/Mobile_Homepage.png)
 
 
 Mobile Dashboard
 
-![MobileDashboard](assets/images/screenshots/Mobile_Dashboard.png)
+![MobileDashboard](assets/images/Screenshots/Mobile_Dashboard.png)
 
 
 Desktop Homepage
 
-![DesktopHomepage](assets/images/screenshots/Desktop_Homepage.png)
+![DesktopHomepage](assets/images/Screenshots/Mobile_Homepage.png)
 
 
 Desktop Dashboard
@@ -149,7 +149,7 @@ Desktop Dashboard
 ## Functionality
 
 <a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate </a><br>
-![TravlMate GIF](https)
+![TravlMate GIF](assets/images/Screenshots/travlmateDemo.gif)
 
 ## Credits
 All icons credited to https://fontawesome.com/
