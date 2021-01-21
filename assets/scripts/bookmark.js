@@ -60,6 +60,7 @@ $('.bookmark').on('click', function(){ // how to distinguish between saving and 
 $(document.body).on('click', '.saved-country-click', function(){
     country = $(this).text();
     localStorage.setItem('current country', country);
+    goToDashboard();
     getTravelData();
 });
 
