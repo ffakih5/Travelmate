@@ -107,19 +107,14 @@ We decided that we would need the site to have searchability as well as the abil
 
 
 ## Mockups
-Mobile Homepage
+<b>Mobile Homepage</b></br>
+![MobileHomepage](https://github.com/ffakih5/Travelmate/blob/suzie-test/assets/images/Screenshots/MobileHomepage.png?raw=true)
 
-![MobileHomepage](assets/images/screenshots/Mobile_Homepage.png)
+<b>Mobile Dashboard</b></br>
+![MobileDashboard](https://github.com/ffakih5/Travelmate/blob/suzie-test/assets/images/Screenshots/MobileDashboard.png?raw=true)
 
-
-Mobile Dashboard
-
-![MobileDashboard](assets/images/screenshots/Mobile_Dashboard.png)
-
-
-Desktop Homepage
-
-![DesktopHomepage](assets/images/screenshots/Desktop_Homepage.png)
+<b>Desktop Homepage</b></br>
+![DesktopHomepage](https://github.com/ffakih5/Travelmate/blob/main/assets/images/Screenshots/Desktop_Homepage.png?raw=true)
 
 
 Desktop Dashboard
@@ -146,10 +141,11 @@ Desktop Dashboard
 - Mobile Responsive site
 
 
-## Functionality
+## Functionality 
+<b>See deployed link here:</b><br>
+<h3><a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate Site</a></h3>
 
-<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate </a><br>
-![TravlMate GIF](https)
+![TravlMate GIF](https://media.giphy.com/media/Pl8Mj1FI477DKdaJwg/giphy.gif)
 
 ## Credits
 All icons credited to https://fontawesome.com/
