@@ -7,7 +7,7 @@ The benefit of the site is that it is a one-stop-shop for information. It saves 
 
 
 <br> <b>See Deployed Application Link: </b>
-<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> TravlMate </a>
+<a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate </a>
 
 ## Table of contents
   - [Motivation](#motivation)
