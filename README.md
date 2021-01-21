@@ -149,4 +149,4 @@ We decided that we would need the site to have searchability as well as the abil
 ## Credits
 All icons credited to https://fontawesome.com/
 
-Images credited to https://blush.design/
+All Images credited to https://blush.design/
