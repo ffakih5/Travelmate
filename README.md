@@ -140,11 +140,11 @@ We decided that we would need the site to have searchability as well as the abil
 
 
 ## Functionality 
+
 <b>See deployed link here:</b>
 
 <a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate</a>
 
-![TravlMate GIF](https://media.giphy.com/media/Pl8Mj1FI477DKdaJwg/giphy.gif)
 
 ## Credits
 All icons credited to https://fontawesome.com/
