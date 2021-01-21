@@ -6,7 +6,7 @@ The benefit of the site is that it is a one-stop-shop for information. It saves 
 <i><b> Search for, learn about, and bookmark your destinations of interest all with one, easy-to-use site -  Travlmate. </i></b>
 
 
-<br> <b>See Deployed Application Link: </b>
+<b> Click the link below and take a trip to view Travlmate </b>
 <a href="https://ffakih5.github.io/Travelmate/"> Travlmate </a>
 
 ## Table of contents
