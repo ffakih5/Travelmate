@@ -1,4 +1,7 @@
 # Travlmate
+
+![Travlmate](assets/images/Screenshots/Phone.jpg)
+
 TravlMate is a website for travel enthusiasts and bloggers to access helpful information that can aid planning for a trip or research for an article or post.
 
 The benefit of the site is that it is a one-stop-shop for information. It saves users time and effort having to search across many sites for a variety of information they might need. Instead, TravlMate is an easy to use service that instantly collates valuable facts in one place, including currency, water safety, neighbouring countries and much more.
