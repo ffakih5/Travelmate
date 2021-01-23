@@ -143,7 +143,6 @@ We decided that we would need the site to have searchability as well as the abil
 - Links to search Google for travel information if it cannot be found by the API
 - Mobile Responsive site
 
-
 ## Functionality 
 
 <b>See deployed link here:</b>
@@ -151,6 +150,8 @@ We decided that we would need the site to have searchability as well as the abil
 <h3><a href="https://ffakih5.github.io/Travelmate/dashboard/index.html"> Travlmate Site</a></h3>
 
 ![Travlmate Gif](assets/images/Screenshots/travlmateDemo.gif)
+
+### [Presentation Slides](https://docs.google.com/presentation/d/1W1P59TPBPPE2S9HvA3tJNeC_YGxTvrKungsgu1K1mJw/edit#slide=id.g794fe087fe_0_5)
 
 
 ## Credits
